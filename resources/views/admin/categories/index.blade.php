@@ -3,6 +3,12 @@
 
 @section('content')
 
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <div class="card">
         <div class="card-header">
             <h3 class="card-title">Таблица категорий</h3>
@@ -25,11 +31,16 @@
                         <td style="vertical-align: middle">{{ $category->title }}</td>
                         <td style="text-align: center">
                             <a href="{{ route('categories.edit', ['category' => $category->id]) }}">
-                                <button type="submit" class="btn btn-primary m-1"><i class="fas fa-pencil-alt"></i></button>
+                                <button type="submit" class="btn btn-primary m-1"><i class="fas fa-pencil-alt"></i>
+                                </button>
                             </a>
-                            <form action="#">
-                                <a href="#">
-                                    <button type="submit" class="btn btn-danger m-1"><i class="fas fa-trash-alt"></i></button>
+                            <form action="{{ route('categories.destroy', ['category' => $category->id]) }}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <a href="{{ route('categories.destroy', ['category' => $category->id]) }}">
+                                    <button type="submit" class="btn btn-danger m-1">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
                                 </a>
                             </form>
 

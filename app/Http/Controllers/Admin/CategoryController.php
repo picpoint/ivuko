@@ -63,7 +63,6 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-//        dd($id);
         $category = Category::find($id);
         return view('admin.categories.edit', compact('category'));
 
@@ -78,7 +77,11 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $category = Category::find($id);
+        $category->slug = null;
+        $category->update($request->all());
+        return redirect()->route('categories.index')->with('success', 'Категория отредактированна');
+
     }
 
     /**
@@ -89,6 +92,9 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Category::destroy($id);
+        session()->flash('success', 'Категория удалена');
+
+        return redirect()->route('categories.index');
     }
 }

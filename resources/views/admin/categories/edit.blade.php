@@ -10,9 +10,9 @@
             <h3 class="card-title">Редактирование категории  - "{{ $category->title }}"</h3>
         </div>
 
-        <form action="{{ route('categories.store') }}" method="post">
+        <form action="{{ route('categories.update', ['category' => $category->id]) }}" method="post">
             @csrf
-            @method('UPDATE')
+            @method('PATCH')
             <div class="card-body">
                 <div class="form-group">
                     <label for="category">Отредактировать категорию </label>
