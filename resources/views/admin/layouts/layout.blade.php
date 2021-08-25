@@ -222,18 +222,6 @@
                                     <p>Создать категорию</p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="../../index2.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Редактировать категорию</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../../index3.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Удалить категорию</p>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view('admin.categories.index');
+        $categories = Category::all();
+        return view('admin.categories.index', compact('categories'));
     }
 
     /**
@@ -36,8 +38,10 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
 
+        Category::create($request->all());
+        $request->session()->flash('success', 'Категория создана');
 
-//        dd($request->all());
+        return redirect()->route('categories.create');
     }
 
     /**
@@ -59,7 +63,10 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+//        dd($id);
+        $category = Category::find($id);
+        return view('admin.categories.edit', compact('category'));
+
     }
 
     /**

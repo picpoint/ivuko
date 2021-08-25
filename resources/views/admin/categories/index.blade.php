@@ -14,38 +14,29 @@
                 <tr>
                     <th style="width: 10px">#</th>
                     <th>Название категории</th>
-                    <th style="width: 300px; text-align: center">Действие</th>
+                    <th style="width: 120px; text-align: center">Действие</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1.</td>
-                    <td>Update software</td>
-                    <td>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>Clean database</td>
-                    <td>
+                @foreach($categories as $category)
+                    <tr>
+                        <td style="vertical-align: middle">{{ $category->id }}</td>
+                        <td style="vertical-align: middle">{{ $category->title }}</td>
+                        <td style="text-align: center">
+                            <a href="{{ route('categories.edit', ['category' => $category->id]) }}">
+                                <button type="submit" class="btn btn-primary m-1"><i class="fas fa-pencil-alt"></i></button>
+                            </a>
+                            <form action="#">
+                                <a href="#">
+                                    <button type="submit" class="btn btn-danger m-1"><i class="fas fa-trash-alt"></i></button>
+                                </a>
+                            </form>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td>Cron job running</td>
-                    <td>
+                        </td>
+                    </tr>
+                @endforeach
 
-                    </td>
-                </tr>
-                <tr>
-                    <td>4.</td>
-                    <td>Fix and squish bugs</td>
-                    <td>
-
-                    </td>
-                </tr>
                 </tbody>
             </table>
         </div>
