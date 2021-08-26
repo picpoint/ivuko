@@ -15,7 +15,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
+        $categories = Category::paginate(7);
         return view('admin.categories.index', compact('categories'));
     }
 
@@ -80,7 +80,7 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $category->slug = null;
         $category->update($request->all());
-        session()->flash('success', 'Категория отредактированна')
+        session()->flash('success', 'Категория отредактированна');
         return redirect()->route('categories.index');
 
     }

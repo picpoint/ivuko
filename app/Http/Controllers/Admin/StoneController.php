@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Category;
 use App\Http\Controllers\Controller;
-use App\Material;
+use App\Stone;
 use Illuminate\Http\Request;
 
-class MaterialController extends Controller
+class StoneController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +15,8 @@ class MaterialController extends Controller
      */
     public function index()
     {
-        $materials = Material::paginate(7);
-        return view('admin.materials.index', compact('materials'));
+        $stones = Stone::paginate(7);
+        return view('admin.stones.index', compact('stones'));
     }
 
     /**
@@ -27,7 +26,7 @@ class MaterialController extends Controller
      */
     public function create()
     {
-        return view('admin.materials.create');
+        return view('admin.stones.create');
     }
 
     /**
@@ -38,12 +37,9 @@ class MaterialController extends Controller
      */
     public function store(Request $request)
     {
-//        dd($request->all());
-
-        Material::create($request->all());
-        session()->flash('success', 'Материал создан');
-        return redirect()->route('materials.create');
-
+        $stone = Stone::create($request->all());
+        session()->flash('success', 'Вставка сохранена');
+        return view('admin.stones.create');
     }
 
     /**
@@ -65,8 +61,8 @@ class MaterialController extends Controller
      */
     public function edit($id)
     {
-        $material = Material::find($id);
-        return view('admin.materials.edit', compact('material'));
+        $stone = Stone::find($id);
+        return view('admin.stones.edit', compact('stone'));
     }
 
     /**
@@ -78,12 +74,11 @@ class MaterialController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-        $material = Material::find($id);
-        $material->slug = null;
-        $material->update($request->all());
+        $stone = Stone::find($id);
+        $stone->slug = null;
+        $stone->update($request->all());
         session()->flash('success', 'Материал отредактирован');
-        return redirect()->route('materials.edit', compact('material'));
+        return redirect()->route('stones.edit', compact('stone'));
     }
 
     /**
@@ -94,8 +89,8 @@ class MaterialController extends Controller
      */
     public function destroy($id)
     {
-        $material = Material::destroy($id);
+        Stone::destroy($id);
         session()->flash('success', 'Материал удалён');
-        return redirect()->route('materials.index', compact('material'));
+        return redirect()->route('stones.index');
     }
 }

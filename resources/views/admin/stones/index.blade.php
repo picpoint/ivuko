@@ -1,9 +1,7 @@
 @extends('admin.layouts.layout')
 
 
-
 @section('content')
-
     @if(session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -12,7 +10,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Таблица материалов</h3>
+            <h3 class="card-title">Таблица вставок</h3>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -20,26 +18,26 @@
                 <thead>
                 <tr>
                     <th style="width: 10px">#</th>
-                    <th>Название материалов</th>
+                    <th>Название вставок</th>
                     <th style="width: 120px; text-align: center">Действие</th>
                 </tr>
                 </thead>
                 <tbody>
 
-                @foreach($materials as $material)
+                @foreach($stones as $stone)
                     <tr>
-                        <td style="vertical-align: middle">{{ $material->id }}</td>
-                        <td style="vertical-align: middle">{{ $material->title }}</td>
+                        <td style="vertical-align: middle">{{ $stone->id }}</td>
+                        <td style="vertical-align: middle">{{ $stone->title }}</td>
                         <td style="text-align: center">
-                            <a href="{{ route('materials.edit', ['material' => $material->id]) }}">
+                            <a href="{{ route('stones.edit', ['stone' => $stone->id]) }}">
                                 <button type="submit" class="btn btn-primary m-1"><i class="fas fa-pencil-alt"></i>
                                 </button>
                             </a>
-                            <form action="{{ route('materials.destroy', ['material' => $material->id]) }}"
+                            <form action="{{ route('stones.destroy', ['stone' => $stone->id]) }}"
                                   method="post">
                                 @csrf
                                 @method('DELETE')
-                                <a href="{{ route('materials.destroy', ['material' => $material->id]) }}">
+                                <a href="{{ route('stones.destroy', ['stone' => $stone->id]) }}">
                                     <button type="submit" class="btn btn-danger m-1">
                                         <i class="fas fa-trash-alt"></i>
                                     </button>
@@ -55,7 +53,7 @@
         </div>
         <!-- /.card-body -->
         <div class="card-footer clearfix">
-            {{ $materials->links() }}
+            {{ $stones->links() }}
         </div>
     </div>
 @endsection

@@ -255,21 +255,15 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="../../index.html" class="nav-link">
+                                <a href="{{ route('stones.index') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Список вставок</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('stones.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Создать вставку</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../../index2.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Редактировать вставку</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../../index3.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Удалить вставку</p>
                                 </a>
                             </li>
                         </ul>
