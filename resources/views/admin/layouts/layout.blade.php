@@ -233,21 +233,15 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="../../index.html" class="nav-link">
+                                <a href="{{ route('materials.index') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Список материалов</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('materials.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Создать материал</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../../index2.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Редактировать материал</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../../index3.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Удалить материал</p>
                                 </a>
                             </li>
                         </ul>
