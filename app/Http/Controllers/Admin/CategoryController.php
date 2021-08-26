@@ -80,7 +80,8 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $category->slug = null;
         $category->update($request->all());
-        return redirect()->route('categories.index')->with('success', 'Категория отредактированна');
+        session()->flash('success', 'Категория отредактированна')
+        return redirect()->route('categories.index');
 
     }
 
@@ -94,7 +95,6 @@ class CategoryController extends Controller
     {
         Category::destroy($id);
         session()->flash('success', 'Категория удалена');
-
         return redirect()->route('categories.index');
     }
 }

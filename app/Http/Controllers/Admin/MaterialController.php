@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Category;
 use App\Http\Controllers\Controller;
 use App\Material;
 use Illuminate\Http\Request;
@@ -37,7 +38,12 @@ class MaterialController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+//        dd($request->all());
+
+        Material::create($request->all());
+        session()->flash('success', 'Материал создан');
+        return redirect()->route('materials.create');
+
     }
 
     /**
@@ -59,7 +65,8 @@ class MaterialController extends Controller
      */
     public function edit($id)
     {
-        //
+        $material = Material::find($id);
+        return view('admin.materials.edit', compact('material'));
     }
 
     /**
@@ -71,7 +78,12 @@ class MaterialController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $material = Material::find($id);
+        $material->slug = null;
+        $material->update($request->all());
+        session()->flash('success', 'Материал отредактирован');
+        return redirect()->route('materials.edit', compact('material'));
     }
 
     /**
@@ -82,6 +94,8 @@ class MaterialController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $material = Material::destroy($id);
+        session()->flash('success', 'Материал удалён');
+        return redirect()->route('materials.index', compact('material'));
     }
 }
