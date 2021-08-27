@@ -17,13 +17,14 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug');
-            $table->string('category');
+            $table->string('category_id');
             $table->string('vendor_code');
             $table->string('material');
             $table->string('stone');
             $table->string('weight');
             $table->string('size');
             $table->string('price');
+            $table->string('picture');
             $table->timestamps();
         });
     }

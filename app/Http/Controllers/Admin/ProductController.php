@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Category;
 use App\Http\Controllers\Controller;
+use App\Material;
+use App\Product;
+use App\Stone;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -14,7 +18,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $products = Product::all();
+        return view('admin.products.index', compact('products'));
     }
 
     /**
@@ -24,7 +29,10 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::all();
+        $materials = Material::all();
+        $stones = Stone::all();
+        return view('admin.products.create', compact('categories', 'materials', 'stones'));
     }
 
     /**
@@ -35,7 +43,9 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $store = Product::create($request->all());
+        session()->flash('success', 'Товар успешно сохранён');
+        return redirect()->route('products.create');
     }
 
     /**
