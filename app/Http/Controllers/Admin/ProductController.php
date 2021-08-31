@@ -43,7 +43,20 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $store = Product::create($request->all());
+        $fileName = $request->file('picture')->getClientOriginalName();
+        $img = $request->file('picture')->storeAs('images', $fileName);
+
+        Product::create([
+            'title' => $request->title,
+            'category_id' => $request->category_id,
+            'vendor_code' => $request->vendor_code,
+            'material' => $request->material,
+            'stone' => $request->stone,
+            'weight' => $request->weight,
+            'size' => $request->size,
+            'price' => $request->price,
+            'picture' => $img,
+        ]);
         session()->flash('success', 'Товар успешно сохранён');
         return redirect()->route('products.create');
     }
