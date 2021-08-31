@@ -44,7 +44,31 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $fileName = $request->file('picture')->getClientOriginalName();
-        $img = $request->file('picture')->storeAs('images', $fileName);
+
+        $categ = $request->category_id;
+//        dd($categ);
+
+        $catFolder = '';
+
+        if ($categ == 1) {
+            $catFolder = 'zhenskie-kolca';
+        } elseif ($categ == 2) {
+            $catFolder = 'zaponki';
+        } elseif ($categ == 3) {
+            $catFolder = 'muzhskie-kolca';
+        } elseif ($categ == 4) {
+            $catFolder = 'pirsing';
+        } elseif ($categ == 5) {
+            $catFolder = 'podveski';
+        } elseif ($categ == 6) {
+            $catFolder = 'pussety';
+        } elseif ($categ == 7) {
+            $catFolder = 'sergi';
+        }
+
+
+
+        $img = $request->file('picture')->storeAs("images/{$catFolder}", $fileName);
 
         Product::create([
             'title' => $request->title,
