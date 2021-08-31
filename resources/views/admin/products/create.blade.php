@@ -29,7 +29,7 @@
             </div>
 
             <div class="form-group" style="width: 96%; margin-left: auto; margin-right: auto">
-                <label for="category_id">Выбирите категорию</label>
+                <label for="category_id">Выберите категорию</label>
                 <select class="form-control" id="category_id" name="category_id">
                     <option>---</option>
 

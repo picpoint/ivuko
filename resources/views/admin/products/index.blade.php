@@ -20,6 +20,7 @@
                 <tr>
                     <th style="width: 10px">#</th>
                     <th>Название изделия</th>
+                    <th>Изображение</th>
                     <th style="width: 120px; text-align: center">Действие</th>
                 </tr>
                 </thead>
@@ -29,6 +30,11 @@
                     <tr>
                         <td style="vertical-align: middle">{{ $product->id }}</td>
                         <td style="vertical-align: middle">{{ $product->title }}</td>
+                        <td style="vertical-align: middle">
+                            <img src="/public/storage/{{ $product->picture }}" alt="/public/storage/{{ $product->picture }}" style="width: 150px; height: 150px">
+                            <br>
+{{--                            <span>{{ $product->category->slug }}</span>--}}
+                        </td>
                         <td style="text-align: center">
                             <a href="{{ route('products.edit', ['product' => $product->id]) }}">
                                 <button type="submit" class="btn btn-primary m-1"><i class="fas fa-pencil-alt"></i>
@@ -54,7 +60,7 @@
         </div>
         <!-- /.card-body -->
         <div class="card-footer clearfix">
-            {{--{{ $materials->links() }}--}}
+            {{ $products->links() }}
         </div>
     </div>
 @endsection

@@ -18,6 +18,7 @@ class ProductController extends Controller
      */
     public function index()
     {
+//        $products = Product::with('category')->paginate(5);
         $products = Product::all();
         return view('admin.products.index', compact('products'));
     }
@@ -45,28 +46,33 @@ class ProductController extends Controller
     {
         $fileName = $request->file('picture')->getClientOriginalName();
 
-        $categ = $request->category_id;
-//        dd($categ);
-
-        $catFolder = '';
-
-        if ($categ == 1) {
-            $catFolder = 'zhenskie-kolca';
-        } elseif ($categ == 2) {
-            $catFolder = 'zaponki';
-        } elseif ($categ == 3) {
-            $catFolder = 'muzhskie-kolca';
-        } elseif ($categ == 4) {
-            $catFolder = 'pirsing';
-        } elseif ($categ == 5) {
-            $catFolder = 'podveski';
-        } elseif ($categ == 6) {
-            $catFolder = 'pussety';
-        } elseif ($categ == 7) {
-            $catFolder = 'sergi';
-        }
 
 
+//        $categ = $request->category_id;
+////        dd($categ);
+//
+//        $catFolder = '';
+//
+//        if ($categ == 1) {
+//            $catFolder = 'zhenskie-kolca';
+//        } elseif ($categ == 2) {
+//            $catFolder = 'zaponki';
+//        } elseif ($categ == 3) {
+//            $catFolder = 'muzhskie-kolca';
+//        } elseif ($categ == 4) {
+//            $catFolder = 'pirsing';
+//        } elseif ($categ == 5) {
+//            $catFolder = 'podveski';
+//        } elseif ($categ == 6) {
+//            $catFolder = 'pussety';
+//        } elseif ($categ == 7) {
+//            $catFolder = 'sergi';
+//        }
+
+
+//        $catFolder = Product::with('category');
+        $catFolder = $request->Product::with('category');
+        dd($catFolder);
 
         $img = $request->file('picture')->storeAs("images/{$catFolder}", $fileName);
 
