@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 01 2021 г., 09:20
+-- Время создания: Сен 01 2021 г., 16:03
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.4.5
 
@@ -48,7 +48,8 @@ INSERT INTO `categories` (`id`, `title`, `slug`, `created_at`, `updated_at`) VAL
 (6, 'Пуссеты', 'pussety', '2021-08-27 07:11:07', '2021-08-27 07:11:07'),
 (7, 'Серьги', 'sergi', '2021-08-27 07:11:14', '2021-08-27 07:11:14'),
 (8, 'Бижутерия', 'bizhuteriya', '2021-09-01 02:41:29', '2021-09-01 02:42:45'),
-(9, 'Часы', 'chasy', '2021-09-01 03:13:54', '2021-09-01 03:13:54');
+(9, 'Часы', 'chasy', '2021-09-01 03:13:54', '2021-09-01 03:13:54'),
+(10, 'Другое', 'drugoe', '2021-09-01 08:56:11', '2021-09-01 08:56:11');
 
 -- --------------------------------------------------------
 
@@ -138,14 +139,13 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `title`, `slug`, `category_id`, `vendor_code`, `material`, `stone`, `weight`, `size`, `price`, `picture`, `created_at`, `updated_at`) VALUES
-(22, 'Запонки', 'zaponki', '2', '660017', '2', '14', '3.64', NULL, '12 638', 'images/zaponki/660017.jpg', '2021-08-31 10:30:19', '2021-08-31 10:30:19'),
 (23, 'Запонки', 'zaponki-1', '2', '160033', '1', '16', '6.49', NULL, '47994', 'images/zaponki/160033.jpg', '2021-08-31 10:32:12', '2021-08-31 10:32:12'),
 (24, 'Подвеска из серебра SKAZKA', 'podveska-iz-serebra-skazka', '5', '52855', '2', '16', '0.66', NULL, '800', 'images/podveski/52855.jpg', '2021-08-31 10:38:03', '2021-08-31 10:38:03'),
 (25, 'Подвеска из золота Золотий ВiК', 'podveska-iz-zolota-zolotiy-vik', '5', '1343269/цв', '1', '16', '1.09', NULL, '7783', 'images/podveski/1343269.jpg', '2021-08-31 10:39:21', '2021-08-31 10:39:21'),
 (26, 'Кольцо мужское из золота', 'kolco-muzhskoe-iz-zolota', '3', '1200005149', '1', '16', '3.31', '20.5', '23071', 'images/muzhskie-kolca/1200005149.jpg', '2021-08-31 10:41:59', '2021-08-31 10:41:59'),
 (27, 'Кольцо мужское из золота DEL\'TA', 'kolco-muzhskoe-iz-zolota-del-ta', '3', '040272', '1', '4', '4.57', '22.5', '31853', 'images/muzhskie-kolca/040272.jpg', '2021-08-31 10:43:17', '2021-08-31 10:43:17'),
 (28, 'Кольцо мужское с бриллиантом Бриант', 'kolco-muzhskoe-s-brilliantom-briant', '3', 'RW63777D', '1', '5', '7.23', '21.5', '136510', 'images/muzhskie-kolca/rw63777d.jpg', '2021-08-31 10:44:49', '2021-08-31 10:44:49'),
-(30, 'Часы SKAZKA', 'chasy-skazka', '9', '46533', '2', '4', '0', NULL, '1300', 'images/chasy/46533.jpg', '2021-09-01 03:15:14', '2021-09-01 03:15:14');
+(30, 'ZZZZ', 'zzzz', '9', '33333', '1', '19', '111', '222', '333', 'images/chasy/46533.jpg', '2021-09-01 03:15:14', '2021-09-01 09:35:20');
 
 -- --------------------------------------------------------
 
@@ -259,7 +259,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT для таблицы `failed_jobs`
@@ -283,7 +283,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблицы `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT для таблицы `stones`
