@@ -92,7 +92,11 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product = Product::find($id);
+        $categories = Category::all();
+        $materials = Material::all();
+        $stones = Stone::all();
+        return view('admin.products.edit', compact('product', 'categories', 'materials', 'stones'));
     }
 
     /**
@@ -104,7 +108,39 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $product = Product::find($id);
+        $product->slug = null;
+
+        $catFolder = '';
+        $fileName = $request->file('picture')->getClientOriginalName();
+
+        $prods = Category::all();
+        $categ = $request->category_id;
+
+        foreach ($prods as $prod) {
+            if ($categ == $prod->id) {
+                $catFolder = $prod->slug;
+            }
+        }
+
+        $img = $request->file('picture')->storeAs("images/{$catFolder}", $fileName);
+
+
+        $product->update([
+            'title' => $request->title,
+            'category_id' => $request->category_id,
+            'vendor_code' => $request->vendor_code,
+            'material' => $request->material,
+            'stone' => $request->stone,
+            'weight' => $request->weight,
+            'size' => $request->size,
+            'price' => $request->price,
+            'picture' => $img,
+        ]);
+
+
+        session()->flash('success', 'Изделие обновлено');
+        return redirect()->route('products.edit', compact('product'));
     }
 
     /**
@@ -115,6 +151,8 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = Product::destroy($id);
+        session()->flash('success', 'Изделие удалено!');
+        return redirect()->route('products.index', compact('product'));
     }
 }

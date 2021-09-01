@@ -32,8 +32,8 @@
                         <td style="vertical-align: middle">{{ $product->title }}</td>
                         <td style="vertical-align: middle">
                             <img src="/public/storage/{{ $product->picture }}" alt="/public/storage/{{ $product->picture }}" style="width: 150px; height: 150px">
-                            <br>
-                            <span>{{ $product->category->slug }}</span>
+                            {{--<br>--}}
+                            {{--<span>{{ $product->category->slug }}</span>--}}
                         </td>
                         <td style="text-align: center">
                             <a href="{{ route('products.edit', ['product' => $product->id]) }}">
