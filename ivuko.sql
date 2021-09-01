@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Авг 31 2021 г., 16:45
+-- Время создания: Сен 01 2021 г., 09:20
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.4.5
 
@@ -46,7 +46,9 @@ INSERT INTO `categories` (`id`, `title`, `slug`, `created_at`, `updated_at`) VAL
 (4, 'Пирсинг', 'pirsing', '2021-08-27 07:10:51', '2021-08-27 07:10:51'),
 (5, 'Подвески', 'podveski', '2021-08-27 07:10:59', '2021-08-27 07:10:59'),
 (6, 'Пуссеты', 'pussety', '2021-08-27 07:11:07', '2021-08-27 07:11:07'),
-(7, 'Серьги', 'sergi', '2021-08-27 07:11:14', '2021-08-27 07:11:14');
+(7, 'Серьги', 'sergi', '2021-08-27 07:11:14', '2021-08-27 07:11:14'),
+(8, 'Бижутерия', 'bizhuteriya', '2021-09-01 02:41:29', '2021-09-01 02:42:45'),
+(9, 'Часы', 'chasy', '2021-09-01 03:13:54', '2021-09-01 03:13:54');
 
 -- --------------------------------------------------------
 
@@ -142,7 +144,8 @@ INSERT INTO `products` (`id`, `title`, `slug`, `category_id`, `vendor_code`, `ma
 (25, 'Подвеска из золота Золотий ВiК', 'podveska-iz-zolota-zolotiy-vik', '5', '1343269/цв', '1', '16', '1.09', NULL, '7783', 'images/podveski/1343269.jpg', '2021-08-31 10:39:21', '2021-08-31 10:39:21'),
 (26, 'Кольцо мужское из золота', 'kolco-muzhskoe-iz-zolota', '3', '1200005149', '1', '16', '3.31', '20.5', '23071', 'images/muzhskie-kolca/1200005149.jpg', '2021-08-31 10:41:59', '2021-08-31 10:41:59'),
 (27, 'Кольцо мужское из золота DEL\'TA', 'kolco-muzhskoe-iz-zolota-del-ta', '3', '040272', '1', '4', '4.57', '22.5', '31853', 'images/muzhskie-kolca/040272.jpg', '2021-08-31 10:43:17', '2021-08-31 10:43:17'),
-(28, 'Кольцо мужское с бриллиантом Бриант', 'kolco-muzhskoe-s-brilliantom-briant', '3', 'RW63777D', '1', '5', '7.23', '21.5', '136510', 'images/muzhskie-kolca/rw63777d.jpg', '2021-08-31 10:44:49', '2021-08-31 10:44:49');
+(28, 'Кольцо мужское с бриллиантом Бриант', 'kolco-muzhskoe-s-brilliantom-briant', '3', 'RW63777D', '1', '5', '7.23', '21.5', '136510', 'images/muzhskie-kolca/rw63777d.jpg', '2021-08-31 10:44:49', '2021-08-31 10:44:49'),
+(30, 'Часы SKAZKA', 'chasy-skazka', '9', '46533', '2', '4', '0', NULL, '1300', 'images/chasy/46533.jpg', '2021-09-01 03:15:14', '2021-09-01 03:15:14');
 
 -- --------------------------------------------------------
 
@@ -256,7 +259,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT для таблицы `failed_jobs`
@@ -280,7 +283,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблицы `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT для таблицы `stones`

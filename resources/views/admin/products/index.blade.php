@@ -33,15 +33,14 @@
                         <td style="vertical-align: middle">
                             <img src="/public/storage/{{ $product->picture }}" alt="/public/storage/{{ $product->picture }}" style="width: 150px; height: 150px">
                             <br>
-{{--                            <span>{{ $product->category->slug }}</span>--}}
+                            <span>{{ $product->category->slug }}</span>
                         </td>
                         <td style="text-align: center">
                             <a href="{{ route('products.edit', ['product' => $product->id]) }}">
                                 <button type="submit" class="btn btn-primary m-1"><i class="fas fa-pencil-alt"></i>
                                 </button>
                             </a>
-                            <form action="{{ route('products.destroy', ['product' => $product->id]) }}"
-                                  method="post">
+                            <form action="{{ route('products.destroy', ['product' => $product->id]) }}" method="post">
                                 @csrf
                                 @method('DELETE')
                                 <a href="{{ route('products.destroy', ['product' => $product->id]) }}">

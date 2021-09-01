@@ -18,8 +18,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-//        $products = Product::with('category')->paginate(5);
-        $products = Product::all();
+        $products = Product::with('category')->paginate(5);
+//        $products = Product::all()->paginate(5);
         return view('admin.products.index', compact('products'));
     }
 
@@ -44,35 +44,17 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $catFolder = '';
         $fileName = $request->file('picture')->getClientOriginalName();
 
+        $prods = Category::all();
+        $categ = $request->category_id;
 
-
-//        $categ = $request->category_id;
-////        dd($categ);
-//
-//        $catFolder = '';
-//
-//        if ($categ == 1) {
-//            $catFolder = 'zhenskie-kolca';
-//        } elseif ($categ == 2) {
-//            $catFolder = 'zaponki';
-//        } elseif ($categ == 3) {
-//            $catFolder = 'muzhskie-kolca';
-//        } elseif ($categ == 4) {
-//            $catFolder = 'pirsing';
-//        } elseif ($categ == 5) {
-//            $catFolder = 'podveski';
-//        } elseif ($categ == 6) {
-//            $catFolder = 'pussety';
-//        } elseif ($categ == 7) {
-//            $catFolder = 'sergi';
-//        }
-
-
-//        $catFolder = Product::with('category');
-        $catFolder = $request->Product::with('category');
-        dd($catFolder);
+        foreach ($prods as $prod) {
+            if ($categ == $prod->id) {
+                $catFolder = $prod->slug;
+            }
+        }
 
         $img = $request->file('picture')->storeAs("images/{$catFolder}", $fileName);
 
