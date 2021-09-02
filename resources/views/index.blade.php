@@ -41,17 +41,65 @@
             <div class="homepage__selection">
                 <div class="homepage__selectwrapper">
                     <div class="homepage__menrings">
-
+                        <div class="homepage__text">
+                            <span>Мужские кольца</span>
+                            <span>СМОТРЕТЬ ВСЕ КОЛЬЦА</span>
+                        </div>
+                        <div class="homepage__pict">
+                            <img src="public/assets/userssources/img/menring.jpg" alt="ring">
+                        </div>
                     </div>
                     <div class="homepage__pendant">
-
+                        <div class="homepage__text">
+                            <span>Подвески</span>
+                            <span>СМОТРЕТЬ ВСЕ ПОДВЕСКИ</span>
+                        </div>
+                        <div class="homepage__pict">
+                            <img src="public/assets/userssources/img/pedant.jpg" alt="pendant">
+                        </div>
                     </div>
                     <div class="homepage__earrings">
-
+                        <div class="homepage__text">
+                            <span>Серьги</span>
+                            <span>СМОТРЕТЬ ВСЕ СЕРЬГИ</span>
+                        </div>
+                        <div class="homepage__pict">
+                            <img src="public/assets/userssources/img/earring.jpg" alt="earring">
+                        </div>
                     </div>
                 </div>
-
             </div>
+
+            <div class="homepage__newproduct">
+                <div class="homepage__newproductwrapper">
+                    <div class="homepage__newproducttitle">
+                        <span>Новые модели</span>
+                    </div>
+                    <div class="homepage__cardsblock">
+                        <div class="homepage__cardproduct"></div>
+                        <div class="homepage__cardproduct"></div>
+                        <div class="homepage__cardproduct"></div>
+                        <div class="homepage__cardproduct"></div>
+                        <div class="homepage__cardproduct"></div>
+                        <div class="homepage__cardproduct"></div>
+                        <div class="homepage__cardproduct"></div>
+                        <div class="homepage__cardproduct"></div>
+                        <div class="homepage__cardproduct"></div>
+                        <div class="homepage__cardproduct"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="homepage__services">
+                <div class="homepage__serviceswrapper">
+                    <div class="homepage__shipping"></div>
+                    <div class="homepage__save"></div>
+                    <div class="homepage__support"></div>
+                    <div class="homepage__back"></div>
+                </div>
+            </div>
+
+
 
         </div>
     </section>

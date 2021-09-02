@@ -31,6 +31,7 @@ body {
       width: 100%;
       background-image: url("/public/assets/userssources/img/slider2.jpg");
       background-size: 100%;
+      background-repeat: no-repeat;
     }
     &__navbar {
       //border: $border;
@@ -105,10 +106,117 @@ body {
     &__selectwrapper {
       border: $border;
       display: flex;
+      justify-content: space-around;
       width: 80%;
     }
     &__menrings {
-
+      border: $border;
+      display: flex;
+      height: 100%;
+      width: 28%;
     }
+    &__text {
+      border: $border;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+    }
+    &__pict {
+      border: $border;
+      display: flex;
+      width: 50%;
+      height: 100%;
+        img {
+          width: 100%;
+        }
+    }
+    &__pendant {
+      border: $border;
+      display: flex;
+      height: 100%;
+      width: 28%;
+    }
+    &__earrings {
+      border: $border;
+      display: flex;
+      height: 100%;
+      width: 28%;
+    }
+
+    &__newproduct {
+      border: $border;
+      display: flex;
+      justify-content: center;
+      //height: 300px;
+      margin-top: 40px;
+    }
+    &__newproductwrapper {
+      border: $border;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      margin-top: 40px;
+    }
+    &__newproducttitle {
+      border: $border;
+      display: flex;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+    &__cardsblock {
+      border: $border;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    &__cardproduct {
+      border: $border;
+      display: flex;
+      width: 200px;
+      height: 300px;
+      margin: 10px 15px;
+    }
+
+    &__services {
+      border: $border;
+      display: flex;
+      justify-content: center;
+      height: 100px;
+      margin-top: 40px;
+    }
+    &__serviceswrapper {
+      border: $border;
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+    }
+    &__shipping {
+      border: $border;
+      display: flex;
+      width: 20%;
+    }
+    &__save {
+      border: $border;
+      display: flex;
+      width: 20%;
+    }
+    &__support {
+      border: $border;
+      display: flex;
+      width: 20%;
+    }
+    &__back {
+      border: $border;
+      display: flex;
+      width: 20%;
+    }
+
+
 
 }
