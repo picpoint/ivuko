@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/public/assets/fonts/Montserrat-Regular.ttf");
+}
+
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -11,12 +16,12 @@ body {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .homepage__wrapper {
   border: 1px solid red;
   display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -26,12 +31,11 @@ body {
   flex-direction: column;
   height: 640px;
   width: 100%;
-  background-image: url("/public/assets/userssources/img/slider.jpg");
+  background-image: url("/public/assets/userssources/img/slider2.jpg");
   background-size: 100%;
 }
 
 .homepage__navbar {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   height: 80px;
@@ -45,19 +49,74 @@ body {
 
 .homepage__navbarlogo {
   border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   height: 100%;
   width: 25%;
+}
+
+.homepage__navbarlogo img {
+  height: 80%;
 }
 
 .homepage__navbarlinks {
   border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 100%;
   width: 50%;
 }
 
+.homepage__navbarlinks a {
+  color: white;
+  text-decoration: none;
+  font-family: Montserrat-Regular;
+  font-weight: bold;
+  transition: ease-in-out 0.3s;
+}
+
+.homepage__navbarlinks a:hover {
+  border-bottom: 2px solid white;
+  transition: ease-in-out 0.3s;
+}
+
 .homepage__navbaraccount {
   border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   height: 100%;
   width: 25%;
+}
+
+.homepage__navbaraccount a {
+  color: white;
+  text-decoration: none;
+  font-family: Montserrat-Regular;
+  font-weight: bold;
+  padding: 0 2px;
+  transition: ease-in-out 0.3s;
+}
+
+.homepage__navbaraccount a:hover {
+  border-bottom: 2px solid white;
+  transition: ease-in-out 0.3s;
+}
+
+.homepage__selection {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  height: 370px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.homepage__selectwrapper {
+  border: 1px solid red;
+  display: flex;
+  width: 80%;
 }
 

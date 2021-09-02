@@ -16,21 +16,43 @@
 
     <section class="homepage">
         <div class="homepage__wrapper">
+
             <div class="homepage__slider">
                 <div class="homepage__navbar">
                     <div class="homepage__navbarmenu">
                         <div class="homepage__navbarlogo">
-
+                            <img src="/public/assets/userssources/img/log5w.png" alt="logo">
                         </div>
                         <div class="homepage__navbarlinks">
-
+                            <a href="#">Прайс лист</a>
+                            <a href="#">Контакты</a>
+                            <a href="#">О компании</a>
+                            <a href="#">Где купить</a>
                         </div>
                         <div class="homepage__navbaraccount">
-
+                            <a href="#">Вход</a>
+                            <a href="#"> / </a>
+                            <a href="#">Регистрация</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="homepage__selection">
+                <div class="homepage__selectwrapper">
+                    <div class="homepage__menrings">
+
+                    </div>
+                    <div class="homepage__pendant">
+
+                    </div>
+                    <div class="homepage__earrings">
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
