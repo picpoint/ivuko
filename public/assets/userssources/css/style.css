@@ -1,0 +1,63 @@
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.homepage {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.homepage__wrapper {
+  border: 1px solid red;
+  display: flex;
+  height: 100%;
+}
+
+.homepage__slider {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 640px;
+  width: 100%;
+  background-image: url("/public/assets/userssources/img/slider.jpg");
+  background-size: 100%;
+}
+
+.homepage__navbar {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
+
+.homepage__navbarmenu {
+  border: 1px solid red;
+  display: flex;
+  width: 65%;
+}
+
+.homepage__navbarlogo {
+  border: 1px solid red;
+  height: 100%;
+  width: 25%;
+}
+
+.homepage__navbarlinks {
+  border: 1px solid red;
+  height: 100%;
+  width: 50%;
+}
+
+.homepage__navbaraccount {
+  border: 1px solid red;
+  height: 100%;
+  width: 25%;
+}
+

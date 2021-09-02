@@ -1,0 +1,60 @@
+@import "var.scss";
+
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.homepage {
+  border: $border;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+    &__wrapper {
+      border: $border;
+      display: flex;
+      height: 100%;
+    }
+    &__slider {
+      border: $border;
+      display: flex;
+      flex-direction: column;
+      height: 640px;
+      width: 100%;
+      background-image: url("/public/assets/userssources/img/slider.jpg");
+      background-size: 100%;
+    }
+    &__navbar {
+      border: $border;
+      display: flex;
+      justify-content: center;
+      height: 80px;
+    }
+    &__navbarmenu {
+      border: $border;
+      display: flex;
+      width: 65%;
+    }
+    &__navbarlogo {
+      border: $border;
+      height: 100%;
+      width: 25%;
+    }
+    &__navbarlinks {
+      border: $border;
+      height: 100%;
+      width: 50%;
+    }
+    &__navbaraccount {
+      border: $border;
+      height: 100%;
+      width: 25%;
+    }
+
+}

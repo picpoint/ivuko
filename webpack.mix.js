@@ -17,6 +17,21 @@ mix.styles([
     'resources/assets/admin/css/adminlte.min.css',
 ], 'public/assets/admin/css/admin.css');
 
+mix.sass('resources/assets/userssources/sass/style.scss', 'public/assets/userssources/css/style.css')
+    .browserSync({
+    proxy: 'http://ivuko/'
+});
+
+
+// mix.js('resources/js/test.js', 'public/js')
+//     .sass('resources/sass/style.scss', 'public/css/style.css')
+//     .browserSync({
+//         proxy: 'http://comp/'
+//     });
+
+
+
+
 
 mix.scripts([
     'resources/assets/admin/plugins/jquery/jquery.min.js',
@@ -24,6 +39,10 @@ mix.scripts([
     'resources/assets/admin/js/adminlte.min.js',
     'resources/assets/admin/js/demo.js',
 ], 'public/assets/admin/js/admin.js');
+
+mix.scripts([
+    'resources/assets/userssources/js/test.js',
+], 'public/assets/userssources/js/test.js');
 
 
 mix.copyDirectory('resources/assets/admin/img', 'public/assets/admin/img');
