@@ -121,14 +121,29 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      align-self: center;
       width: 50%;
       height: 100%;
+        span {
+          text-align: center;
+          &:nth-child(1) {
+            border: $border;
+            font-size: 2rem;
+            font-weight: bolder;
+          }
+        }
+        a {
+          border-bottom: 1px solid black;
+          text-decoration: none;
+          margin-top: 70px;
+          color: black;
+        }
     }
     &__pict {
       border: $border;
       display: flex;
+      justify-content: center;
       width: 50%;
-      height: 100%;
         img {
           width: 100%;
         }

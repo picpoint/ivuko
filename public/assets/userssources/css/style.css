@@ -135,15 +135,33 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-self: center;
   width: 50%;
   height: 100%;
+}
+
+.homepage__text span {
+  text-align: center;
+}
+
+.homepage__text span:nth-child(1) {
+  border: 1px solid red;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.homepage__text a {
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  margin-top: 70px;
+  color: black;
 }
 
 .homepage__pict {
   border: 1px solid red;
   display: flex;
+  justify-content: center;
   width: 50%;
-  height: 100%;
 }
 
 .homepage__pict img {

@@ -43,7 +43,7 @@
                     <div class="homepage__menrings">
                         <div class="homepage__text">
                             <span>Мужские кольца</span>
-                            <span>СМОТРЕТЬ ВСЕ КОЛЬЦА</span>
+                            <a href="#">СМОТРЕТЬ ВСЕ КОЛЬЦА</a>
                         </div>
                         <div class="homepage__pict">
                             <img src="public/assets/userssources/img/menring.jpg" alt="ring">
@@ -52,7 +52,7 @@
                     <div class="homepage__pendant">
                         <div class="homepage__text">
                             <span>Подвески</span>
-                            <span>СМОТРЕТЬ ВСЕ ПОДВЕСКИ</span>
+                            <a href="#">СМОТРЕТЬ ВСЕ ПОДВЕСКИ</a>
                         </div>
                         <div class="homepage__pict">
                             <img src="public/assets/userssources/img/pedant.jpg" alt="pendant">
@@ -61,7 +61,7 @@
                     <div class="homepage__earrings">
                         <div class="homepage__text">
                             <span>Серьги</span>
-                            <span>СМОТРЕТЬ ВСЕ СЕРЬГИ</span>
+                            <a href="#">СМОТРЕТЬ ВСЕ СЕРЬГИ</a>
                         </div>
                         <div class="homepage__pict">
                             <img src="public/assets/userssources/img/earring.jpg" alt="earring">
