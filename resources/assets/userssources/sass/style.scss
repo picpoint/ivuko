@@ -143,9 +143,13 @@ body {
       border: $border;
       display: flex;
       justify-content: center;
+      align-items: center;
       width: 50%;
+      overflow: hidden;
         img {
-          width: 100%;
+          height: 80%;
+          object-fit: cover;
+          overflow: hidden;
         }
     }
     &__pendant {

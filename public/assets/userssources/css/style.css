@@ -161,11 +161,16 @@ body {
   border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 50%;
+  overflow: hidden;
 }
 
 .homepage__pict img {
-  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 
 .homepage__pendant {
