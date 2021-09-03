@@ -76,16 +76,106 @@
                         <span>Новые модели</span>
                     </div>
                     <div class="homepage__cardsblock">
-                        <div class="homepage__cardproduct"></div>
-                        <div class="homepage__cardproduct"></div>
-                        <div class="homepage__cardproduct"></div>
-                        <div class="homepage__cardproduct"></div>
-                        <div class="homepage__cardproduct"></div>
-                        <div class="homepage__cardproduct"></div>
-                        <div class="homepage__cardproduct"></div>
-                        <div class="homepage__cardproduct"></div>
-                        <div class="homepage__cardproduct"></div>
-                        <div class="homepage__cardproduct"></div>
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                <span>Tic small Alessi</span>
+                                <span>$85.0</span>
+                            </div>
+                        </div>
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                <span>Tic small Alessi</span>
+                                <span>$85.0</span>
+                            </div>
+                        </div>
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <img src="public\assets\userssources\img\pages\necklace.jpg" alt="jewelry_product">
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                <span>Tic small Alessi</span>
+                                <span>$85.0</span>
+                            </div>
+                        </div>
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <img src="public\assets\userssources\img\pages\pendant.jpg" alt="jewelry_product">
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                <span>Tic small Alessi</span>
+                                <span>$85.0</span>
+                            </div>
+                        </div>
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <img src="public\assets\userssources\img\pages\ring2.jpg" alt="jewelry_product">
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                <span>Tic small Alessi</span>
+                                <span>$85.0</span>
+                            </div>
+                        </div>
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                <span>Tic small Alessi</span>
+                                <span>$85.0</span>
+                            </div>
+                        </div>
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <img src="public\assets\userssources\img\pages\pendant.jpg" alt="jewelry_product">
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                <span>Tic small Alessi</span>
+                                <span>$85.0</span>
+                            </div>
+                        </div>
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <img src="public\assets\userssources\img\pages\necklace.jpg" alt="jewelry_product">
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                <span>Tic small Alessi</span>
+                                <span>$85.0</span>
+                            </div>
+                        </div>
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                <span>Tic small Alessi</span>
+                                <span>$85.0</span>
+                            </div>
+                        </div>
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                <span>Tic small Alessi</span>
+                                <span>$85.0</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
