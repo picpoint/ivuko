@@ -182,11 +182,52 @@
 
             <div class="homepage__services">
                 <div class="homepage__serviceswrapper">
-                    <div class="homepage__shipping"></div>
-                    <div class="homepage__save"></div>
-                    <div class="homepage__support"></div>
-                    <div class="homepage__back"></div>
+
+                    <div class="homepage__shipping">
+                        <div class="homepage__shippingimg">
+                            <img src="\public\assets\userssources\img\rocket.jpg" alt="rocket">
+                        </div>
+                        <div class="homepage__shippingdesc">
+                            <span>Быстрая и бесплатная доставка</span>
+                            <span>Все заказы от 2000р</span>
+                        </div>
+                    </div>
+
+                    <div class="homepage__save">
+                        <div class="homepage__saveimg">
+                            <img src="\public\assets\userssources\img\call.jpg" alt="call">
+                        </div>
+                        <div class="homepage__savedesc">
+                            <span>Скидка до 20%</span>
+                            <span>при заказе по телефону</span>
+                        </div>
+                    </div>
+
+                    <div class="homepage__support">
+                        <div class="homepage__supportimg">
+                            <img src="\public\assets\userssources\img\car.jpg" alt="support">
+                        </div>
+                        <div class="homepage__supportdesc">
+                            <span>Онлайн поддержка</span>
+                            <span>подарки при регистрации</span>
+                        </div>
+                    </div>
+
+                    <div class="homepage__back">
+                        <div class="homepage__backimg">
+                            <img src="\public\assets\userssources\img\pig.jpg" alt="back">
+                        </div>
+                        <div class="homepage__backdesc">
+                            <span>14 дней для возврата</span>
+                            <span>при сохранении товарного вида</span>
+                        </div>
+                    </div>
+                    
                 </div>
+            </div>
+
+            <div class="homepage__footer">
+
             </div>
 
 

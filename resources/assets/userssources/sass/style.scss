@@ -12,19 +12,68 @@ body {
 }
 
 
+// -----------------------
+// MIXINS
+
+@mixin mixinselection {
+  //border: $border;
+  display: flex;
+  height: 100%;
+  width: 28%;
+  background-color: $colorlightgray;
+}
+
+
+@mixin servicesblock {
+  //border: $border;
+  display: flex;
+  width: 20%;
+}
+@mixin servicesimg {
+  //border: $border;
+  display: flex;
+  align-items: center;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@mixin servicesdesc {
+  //border: $border;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  span {
+    //border: $border;
+    text-align: center;
+    margin: 5px 0;
+    font-family: Montserrat-Regular;
+    &:nth-child(1) {
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+// -----------------------
+
+
+
 .homepage {
-  border: $border;
+  //border: $border;
   display: flex;
   flex-direction: column;
   //height: 100vh;
     &__wrapper {
-      border: $border;
+      //border: $border;
       display: flex;
       flex-direction: column;
       height: 100%;
     }
     &__slider {
-      border: $border;
+      //border: $border;
       display: flex;
       flex-direction: column;
       height: 640px;
@@ -40,12 +89,12 @@ body {
       height: 80px;
     }
     &__navbarmenu {
-      border: $border;
+      //border: $border;
       display: flex;
       width: 65%;
     }
     &__navbarlogo {
-      border: $border;
+      //border: $border;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -56,7 +105,7 @@ body {
         }
     }
     &__navbarlinks {
-      border: $border;
+      //border: $border;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -75,7 +124,7 @@ body {
         }
     }
     &__navbaraccount {
-      border: $border;
+      //border: $border;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -96,7 +145,7 @@ body {
     }
 
     &__selection {
-      border: $border;
+      //border: $border;
       display: flex;
       justify-content: center;
       height: 370px;
@@ -104,19 +153,16 @@ body {
       margin-top: 40px;
     }
     &__selectwrapper {
-      border: $border;
+      //border: $border;
       display: flex;
       justify-content: space-around;
       width: 80%;
     }
     &__menrings {
-      border: $border;
-      display: flex;
-      height: 100%;
-      width: 28%;
+      @include mixinselection;
     }
     &__text {
-      border: $border;
+      //border: $border;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -126,21 +172,24 @@ body {
       height: 100%;
         span {
           text-align: center;
+          font-family: Montserrat-Regular;
           &:nth-child(1) {
-            border: $border;
-            font-size: 2rem;
+            //border: $border;
+            font-size: 1.4rem;
             font-weight: bolder;
           }
         }
         a {
-          border-bottom: 1px solid black;
           text-decoration: none;
-          margin-top: 70px;
+          margin-top: 50px;
           color: black;
+          width: 80%;
+          font-family: Montserrat-Regular;
+          text-align: center;
+          font-size: 0.9rem;
         }
     }
     &__pict {
-      border: $border;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -152,28 +201,23 @@ body {
           overflow: hidden;
         }
     }
+
     &__pendant {
-      border: $border;
-      display: flex;
-      height: 100%;
-      width: 28%;
+      @include mixinselection;
     }
     &__earrings {
-      border: $border;
-      display: flex;
-      height: 100%;
-      width: 28%;
+      @include mixinselection;
     }
 
     &__newproduct {
-      border: $border;
+      //border: $border;
       display: flex;
       justify-content: center;
       //height: 300px;
       margin-top: 40px;
     }
     &__newproductwrapper {
-      border: $border;
+      //border: $border;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -181,10 +225,11 @@ body {
       margin-top: 40px;
     }
     &__newproducttitle {
-      border: $border;
+      //border: $border;
       display: flex;
       span {
         font-size: 1.5rem;
+        font-family: Montserrat-Regular;
       }
     }
     &__cardsblock {
@@ -195,7 +240,7 @@ body {
       width: 100%;
     }
     &__cardproduct {
-      border: $border;
+      //border: $border;
       display: flex;
       flex-direction: column;
       width: 260px;
@@ -203,13 +248,13 @@ body {
       margin: 15px 12px;
     }
     &__cardimg {
-      border: $border;
+      //border: $border;
       display: flex;
       width: 100%;
       height: 75%;
     }
     &__cardinfo {
-      border: $border;
+      //border: $border;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -219,6 +264,7 @@ body {
           width: 30%;
         }
         span {
+          font-family: Montserrat-Regular;
           &:nth-child(3) {
             font-weight: bold;
             font-size: 1.1rem;
@@ -227,7 +273,7 @@ body {
     }
 
     &__services {
-      border: $border;
+      //border: $border;
       display: flex;
       justify-content: center;
       height: 150px;
@@ -235,30 +281,50 @@ body {
       background-color: $colorlightgray;
     }
     &__serviceswrapper {
-      border: $border;
+      //border: $border;
       display: flex;
       justify-content: space-around;
       width: 80%;
     }
     &__shipping {
-      border: $border;
-      display: flex;
-      width: 20%;
+      @include servicesblock;
     }
+    &__shippingimg {
+      @include servicesimg;
+    }
+    &__shippingdesc {
+      @include servicesdesc;
+    }
+
     &__save {
-      border: $border;
-      display: flex;
-      width: 20%;
+      @include servicesblock;
     }
+
+    &__saveimg {
+      @include servicesimg;
+    }
+    &__savedesc {
+      @include servicesdesc;
+    }
+
     &__support {
-      border: $border;
-      display: flex;
-      width: 20%;
+      @include servicesblock;
     }
+    &__supportimg {
+      @include servicesimg;
+    }
+    &__supportdesc {
+      @include servicesdesc;
+    }
+
     &__back {
-      border: $border;
-      display: flex;
-      width: 20%;
+      @include servicesblock;
+    }
+    &__backimg {
+      @include servicesimg;
+    }
+    &__backdesc {
+      @include servicesdesc;
     }
 
 

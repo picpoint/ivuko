@@ -13,20 +13,17 @@ body {
 }
 
 .homepage {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
 
 .homepage__wrapper {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .homepage__slider {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   height: 640px;
@@ -43,13 +40,11 @@ body {
 }
 
 .homepage__navbarmenu {
-  border: 1px solid red;
   display: flex;
   width: 65%;
 }
 
 .homepage__navbarlogo {
-  border: 1px solid red;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -62,7 +57,6 @@ body {
 }
 
 .homepage__navbarlinks {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -75,16 +69,15 @@ body {
   text-decoration: none;
   font-family: Montserrat-Regular;
   font-weight: bold;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.1s;
 }
 
 .homepage__navbarlinks a:hover {
   border-bottom: 2px solid white;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.1s;
 }
 
 .homepage__navbaraccount {
-  border: 1px solid red;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -98,16 +91,15 @@ body {
   font-family: Montserrat-Regular;
   font-weight: bold;
   padding: 0 2px;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.1s;
 }
 
 .homepage__navbaraccount a:hover {
   border-bottom: 2px solid white;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.1s;
 }
 
 .homepage__selection {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   height: 370px;
@@ -116,21 +108,19 @@ body {
 }
 
 .homepage__selectwrapper {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   width: 80%;
 }
 
 .homepage__menrings {
-  border: 1px solid red;
   display: flex;
   height: 100%;
   width: 28%;
+  background-color: #f5f5f5;
 }
 
 .homepage__text {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,23 +132,25 @@ body {
 
 .homepage__text span {
   text-align: center;
+  font-family: Montserrat-Regular;
 }
 
 .homepage__text span:nth-child(1) {
-  border: 1px solid red;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bolder;
 }
 
 .homepage__text a {
-  border-bottom: 1px solid black;
   text-decoration: none;
-  margin-top: 70px;
+  margin-top: 50px;
   color: black;
+  width: 80%;
+  font-family: Montserrat-Regular;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 .homepage__pict {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,28 +166,26 @@ body {
 }
 
 .homepage__pendant {
-  border: 1px solid red;
   display: flex;
   height: 100%;
   width: 28%;
+  background-color: #f5f5f5;
 }
 
 .homepage__earrings {
-  border: 1px solid red;
   display: flex;
   height: 100%;
   width: 28%;
+  background-color: #f5f5f5;
 }
 
 .homepage__newproduct {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
 
 .homepage__newproductwrapper {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,12 +194,12 @@ body {
 }
 
 .homepage__newproducttitle {
-  border: 1px solid red;
   display: flex;
 }
 
 .homepage__newproducttitle span {
   font-size: 1.5rem;
+  font-family: Montserrat-Regular;
 }
 
 .homepage__cardsblock {
@@ -220,7 +210,6 @@ body {
 }
 
 .homepage__cardproduct {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   width: 260px;
@@ -229,14 +218,12 @@ body {
 }
 
 .homepage__cardimg {
-  border: 1px solid red;
   display: flex;
   width: 100%;
   height: 75%;
 }
 
 .homepage__cardinfo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -248,13 +235,16 @@ body {
   width: 30%;
 }
 
+.homepage__cardinfo span {
+  font-family: Montserrat-Regular;
+}
+
 .homepage__cardinfo span:nth-child(3) {
   font-weight: bold;
   font-size: 1.1rem;
 }
 
 .homepage__services {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   height: 150px;
@@ -263,33 +253,136 @@ body {
 }
 
 .homepage__serviceswrapper {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   width: 80%;
 }
 
 .homepage__shipping {
-  border: 1px solid red;
   display: flex;
   width: 20%;
+}
+
+.homepage__shippingimg {
+  display: flex;
+  align-items: center;
+}
+
+.homepage__shippingimg img {
+  width: 100px;
+  height: 100px;
+}
+
+.homepage__shippingdesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage__shippingdesc span {
+  text-align: center;
+  margin: 5px 0;
+  font-family: Montserrat-Regular;
+}
+
+.homepage__shippingdesc span:nth-child(1) {
+  font-weight: bold;
 }
 
 .homepage__save {
-  border: 1px solid red;
   display: flex;
   width: 20%;
+}
+
+.homepage__saveimg {
+  display: flex;
+  align-items: center;
+}
+
+.homepage__saveimg img {
+  width: 100px;
+  height: 100px;
+}
+
+.homepage__savedesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage__savedesc span {
+  text-align: center;
+  margin: 5px 0;
+  font-family: Montserrat-Regular;
+}
+
+.homepage__savedesc span:nth-child(1) {
+  font-weight: bold;
 }
 
 .homepage__support {
-  border: 1px solid red;
   display: flex;
   width: 20%;
 }
 
+.homepage__supportimg {
+  display: flex;
+  align-items: center;
+}
+
+.homepage__supportimg img {
+  width: 100px;
+  height: 100px;
+}
+
+.homepage__supportdesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage__supportdesc span {
+  text-align: center;
+  margin: 5px 0;
+  font-family: Montserrat-Regular;
+}
+
+.homepage__supportdesc span:nth-child(1) {
+  font-weight: bold;
+}
+
 .homepage__back {
-  border: 1px solid red;
   display: flex;
   width: 20%;
+}
+
+.homepage__backimg {
+  display: flex;
+  align-items: center;
+}
+
+.homepage__backimg img {
+  width: 100px;
+  height: 100px;
+}
+
+.homepage__backdesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage__backdesc span {
+  text-align: center;
+  margin: 5px 0;
+  font-family: Montserrat-Regular;
+}
+
+.homepage__backdesc span:nth-child(1) {
+  font-weight: bold;
 }
 
