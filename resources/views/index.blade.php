@@ -46,7 +46,7 @@
                             <a href="#">СМОТРЕТЬ ВСЕ КОЛЬЦА</a>
                         </div>
                         <div class="homepage__pict">
-                            <img src="public/assets/userssources/img/menring.jpg" alt="ring">
+                            <img src="public/assets/userssources/img/menring.png" alt="ring">
                         </div>
                     </div>
                     <div class="homepage__pendant">
@@ -55,7 +55,7 @@
                             <a href="#">СМОТРЕТЬ ВСЕ ПОДВЕСКИ</a>
                         </div>
                         <div class="homepage__pict">
-                            <img src="public/assets/userssources/img/pedant.jpg" alt="pendant">
+                            <img src="public/assets/userssources/img/pedant.png" alt="pendant">
                         </div>
                     </div>
                     <div class="homepage__earrings">
@@ -64,7 +64,7 @@
                             <a href="#">СМОТРЕТЬ ВСЕ СЕРЬГИ</a>
                         </div>
                         <div class="homepage__pict">
-                            <img src="public/assets/userssources/img/earring.jpg" alt="earring">
+                            <img src="public/assets/userssources/img/earring.png" alt="earring">
                         </div>
                     </div>
                 </div>
@@ -227,7 +227,16 @@
             </div>
 
             <div class="homepage__footer">
-
+                <div class="homepage__subscribe">
+                    <span>Подпишитесь на наши новости</span>
+                    <input type="email" name="describe" id="describe">
+                </div>
+                <div class="homepage__navbarlinks">
+                    <a href="#">Прайс лист</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">О компании</a>
+                    <a href="#">Где купить</a>
+                </div>
             </div>
 
 

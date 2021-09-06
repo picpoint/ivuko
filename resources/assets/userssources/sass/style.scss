@@ -27,15 +27,18 @@ body {
 @mixin servicesblock {
   //border: $border;
   display: flex;
+  justify-content: space-between;
   width: 20%;
 }
 @mixin servicesimg {
   //border: $border;
   display: flex;
+  justify-content: center;
   align-items: center;
+  width: 30%;
   img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
   }
 }
 @mixin servicesdesc {
@@ -44,11 +47,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 70%;
   span {
     //border: $border;
     text-align: center;
     margin: 5px 0;
     font-family: Montserrat-Regular;
+    font-size: 0.9rem;
     &:nth-child(1) {
       font-weight: bold;
     }
@@ -230,6 +235,7 @@ body {
       span {
         font-size: 1.5rem;
         font-family: Montserrat-Regular;
+        font-weight: bold;
       }
     }
     &__cardsblock {
@@ -325,6 +331,22 @@ body {
     }
     &__backdesc {
       @include servicesdesc;
+    }
+
+
+    &__footer {
+      border: $border;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: black;
+    }
+    &__subscribe {
+      border: $border;
+
+    }
+    &__navbarlinks {
+      
     }
 
 
