@@ -23,12 +23,9 @@ mix.sass('resources/assets/userssources/sass/style.scss', 'public/assets/usersso
 });
 
 
-// mix.js('resources/js/test.js', 'public/js')
-//     .sass('resources/sass/style.scss', 'public/css/style.css')
-//     .browserSync({
-//         proxy: 'http://comp/'
-//     });
-
+// mix.less('resources/assets/userssources/less/mainless.less', 'public/assets/userssources/css/mainless.css').options({
+//     processCssUrls: false
+// });
 
 
 

@@ -83,9 +83,12 @@ body {
       flex-direction: column;
       height: 640px;
       width: 100%;
-      background-image: url("/public/assets/userssources/img/slider/05.jpg");
+      background-image: url("/public/assets/userssources/img/slider/06.jpg");
       background-size: 100%;
       background-repeat: no-repeat;
+      -webkit-box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
+      -moz-box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
+      box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
     }
     &__navbar {
       //border: $border;
