@@ -1,5 +1,5 @@
 const smartgrid = require('smart-grid');
-let preprocessor = 'less';
+let preprocessor = 'scss';
 
 const smartGrigConf = {
     outputStyle: preprocessor,
@@ -43,4 +43,4 @@ const smartGrigConf = {
 };
 
 
-smartgrid('./resources/assets/userssources/' + preprocessor, smartGrigConf );
+smartgrid('./resources/assets/userssources/sass/', smartGrigConf );

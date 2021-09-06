@@ -23,7 +23,7 @@ mix.sass('resources/assets/userssources/sass/style.scss', 'public/assets/usersso
 });
 
 
-// mix.less('resources/assets/userssources/less/mainless.less', 'public/assets/userssources/css/mainless.css').options({
+// mix.less('resources/assets/userssources/less/smart-grid.less', 'resources/assets/userssources/sass/smart-grid.scss').options({
 //     processCssUrls: false
 // });
 
