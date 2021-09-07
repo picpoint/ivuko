@@ -3,7 +3,7 @@ let preprocessor = 'scss';
 
 const smartGrigConf = {
     outputStyle: preprocessor,
-    colums: 12,
+    columns: 12,
     offset: '30px',   // межклоночник
     mobileFirst: false,
     container: {

@@ -17,10 +17,14 @@ mix.styles([
     'resources/assets/admin/css/adminlte.min.css',
 ], 'public/assets/admin/css/admin.css');
 
+
+
+
 mix.sass('resources/assets/userssources/sass/style.scss', 'public/assets/userssources/css/style.css')
     .browserSync({
     proxy: 'http://ivuko/'
 });
+
 
 
 // mix.less('resources/assets/userssources/less/smart-grid.less', 'resources/assets/userssources/sass/smart-grid.scss').options({

@@ -85,7 +85,9 @@
                     <div class="homepage__cardsblock">
                         <div class="homepage__cardproduct">
                             <div class="homepage__cardimg">
-                                <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
+                                <a href="#">
+                                    <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
+                                </a>
                             </div>
                             <div class="homepage__cardinfo">
                                 <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
@@ -95,7 +97,9 @@
                         </div>
                         <div class="homepage__cardproduct">
                             <div class="homepage__cardimg">
-                                <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
+                                <a href="#">
+                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
+                                </a>
                             </div>
                             <div class="homepage__cardinfo">
                                 <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
@@ -105,7 +109,9 @@
                         </div>
                         <div class="homepage__cardproduct">
                             <div class="homepage__cardimg">
-                                <img src="public\assets\userssources\img\pages\necklace.jpg" alt="jewelry_product">
+                                <a href="#">
+                                    <img src="public\assets\userssources\img\pages\necklace.jpg" alt="jewelry_product">
+                                </a>
                             </div>
                             <div class="homepage__cardinfo">
                                 <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
@@ -115,7 +121,9 @@
                         </div>
                         <div class="homepage__cardproduct">
                             <div class="homepage__cardimg">
-                                <img src="public\assets\userssources\img\pages\pendant.jpg" alt="jewelry_product">
+                                <a href="#">
+                                    <img src="public\assets\userssources\img\pages\pendant.jpg" alt="jewelry_product">
+                                </a>
                             </div>
                             <div class="homepage__cardinfo">
                                 <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
@@ -125,7 +133,9 @@
                         </div>
                         <div class="homepage__cardproduct">
                             <div class="homepage__cardimg">
-                                <img src="public\assets\userssources\img\pages\ring2.jpg" alt="jewelry_product">
+                                <a href="#">
+                                    <img src="public\assets\userssources\img\pages\ring2.jpg" alt="jewelry_product">
+                                </a>
                             </div>
                             <div class="homepage__cardinfo">
                                 <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
@@ -135,7 +145,9 @@
                         </div>
                         <div class="homepage__cardproduct">
                             <div class="homepage__cardimg">
-                                <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
+                                <a href="#">
+                                    <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
+                                </a>
                             </div>
                             <div class="homepage__cardinfo">
                                 <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
@@ -145,7 +157,9 @@
                         </div>
                         <div class="homepage__cardproduct">
                             <div class="homepage__cardimg">
-                                <img src="public\assets\userssources\img\pages\pendant.jpg" alt="jewelry_product">
+                                <a href="#">
+                                    <img src="public\assets\userssources\img\pages\pendant.jpg" alt="jewelry_product">
+                                </a>
                             </div>
                             <div class="homepage__cardinfo">
                                 <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
@@ -155,7 +169,9 @@
                         </div>
                         <div class="homepage__cardproduct">
                             <div class="homepage__cardimg">
-                                <img src="public\assets\userssources\img\pages\necklace.jpg" alt="jewelry_product">
+                                <a href="#">
+                                    <img src="public\assets\userssources\img\pages\necklace.jpg" alt="jewelry_product">
+                                </a>
                             </div>
                             <div class="homepage__cardinfo">
                                 <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
@@ -165,7 +181,9 @@
                         </div>
                         <div class="homepage__cardproduct">
                             <div class="homepage__cardimg">
-                                <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
+                                <a href="#">
+                                    <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
+                                </a>
                             </div>
                             <div class="homepage__cardinfo">
                                 <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
@@ -175,7 +193,9 @@
                         </div>
                         <div class="homepage__cardproduct">
                             <div class="homepage__cardimg">
-                                <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
+                                <a href="#">
+                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
+                                </a>
                             </div>
                             <div class="homepage__cardinfo">
                                 <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">

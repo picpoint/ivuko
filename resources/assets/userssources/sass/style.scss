@@ -101,6 +101,10 @@ body {
       //border: $border;
       display: flex;
       width: 65%;
+        &__xxl-block {
+          background-color: green;
+          width: 500px;
+        }
     }
     &__navbarlogo {
       //border: $border;
@@ -273,8 +277,14 @@ body {
       display: flex;
       width: 100%;
       height: 75%;
-        img {
+        a {
+          //border: $border;
           width: 100%;
+          height: 100%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
         }
     }
     &__cardinfo {
@@ -360,6 +370,7 @@ body {
       justify-content: center;
       align-items: center;
       background-color: black;
+      padding-bottom: 30px;
     }
     &__subscribe {
       //border: $border;
@@ -391,10 +402,6 @@ body {
         font-weight: bold;
       }
     }
-    &__navbarlinks {
-      //margin: 20px 0;
-    }
-
 
 
 }
