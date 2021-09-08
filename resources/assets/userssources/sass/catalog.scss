@@ -1,0 +1,24 @@
+.catalog {
+  border: $border;
+  display: flex;
+  flex-direction: column;
+    &__wrapper {
+      border: $border;
+      display: flex;
+      flex-direction: column;
+    }
+    &__describe {
+      border: $border;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+        span {
+          //font-weight: bold;
+          font-family: Montserrat-Regular;
+          font-size: 1.7rem;
+        }
+    }
+
+
+}

@@ -18,31 +18,34 @@
         <div class="homepage__wrapper">
 
             <div class="homepage__slider">
-                <div class="homepage__navbar">
-                    <div class="homepage__navbarmenu">
-                        <div class="homepage__navbarlogo">
-                            <a href="#">
-                                <img src="/public/assets/userssources/img/log5w.png" alt="logo">
-                            </a>
-                        </div>
-                        <div class="homepage__navbarlinks">
-                            <a href="#">Каталог</a>
-                            <span>|</span>
-                            <a href="#">Прайс лист</a>
-                            <span>|</span>
-                            <a href="#">Контакты</a>
-                            <span>|</span>
-                            <a href="#">О компании</a>
-                            <span>|</span>
-                            <a href="#">Где купить</a>
-                        </div>
-                        <div class="homepage__navbaraccount">
-                            <a href="#">Вход</a>
-                            <a href="#"> / </a>
-                            <a href="#">Регистрация</a>
-                        </div>
-                    </div>
-                </div>
+
+                @include('navbar.navbar')
+
+                {{--<div class="homepage__navbar">--}}
+                    {{--<div class="homepage__navbarmenu">--}}
+                        {{--<div class="homepage__navbarlogo">--}}
+                            {{--<a href="#">--}}
+                                {{--<img src="/public/assets/userssources/img/log5w.png" alt="logo">--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="homepage__navbarlinks">--}}
+                            {{--<a href="{{ route('catalog') }}">Каталог</a>--}}
+                            {{--<span>|</span>--}}
+                            {{--<a href="#">Прайс лист</a>--}}
+                            {{--<span>|</span>--}}
+                            {{--<a href="#">Контакты</a>--}}
+                            {{--<span>|</span>--}}
+                            {{--<a href="#">О компании</a>--}}
+                            {{--<span>|</span>--}}
+                            {{--<a href="#">Где купить</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="homepage__navbaraccount">--}}
+                            {{--<a href="#">Вход</a>--}}
+                            {{--<a href="#"> / </a>--}}
+                            {{--<a href="#">Регистрация</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
 
             <div class="homepage__selection">
@@ -253,28 +256,30 @@
                 </div>
             </div>
 
-            <div class="homepage__footer">
-                <div class="homepage__subscribe">
-                    <span>Подпишитесь на наши новости</span>
-                    <div class="homepage__subscribefield">
-                        <form action="#" method="post" name="formsubscribe" class="homepage__formsubscribe">
-                            <input type="email" name="describe" id="describe">
-                            <button name="btnsubscribe" id="btnsubscribe">ПОДПИСАТЬСЯ</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="homepage__navbarlinks">
-                    <a href="#">Каталог</a>
-                    <span>|</span>
-                    <a href="#">Прайс лист</a>
-                    <span>|</span>
-                    <a href="#">Контакты</a>
-                    <span>|</span>
-                    <a href="#">О компании</a>
-                    <span>|</span>
-                    <a href="#">Где купить</a>
-                </div>
-            </div>
+            @include('footer.footer')
+
+            {{--<div class="homepage__footer">--}}
+                {{--<div class="homepage__subscribe">--}}
+                    {{--<span>Подпишитесь на наши новости</span>--}}
+                    {{--<div class="homepage__subscribefield">--}}
+                        {{--<form action="#" method="post" name="formsubscribe" class="homepage__formsubscribe">--}}
+                            {{--<input type="email" name="describe" id="describe">--}}
+                            {{--<button name="btnsubscribe" id="btnsubscribe">ПОДПИСАТЬСЯ</button>--}}
+                        {{--</form>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="homepage__navbarlinks">--}}
+                    {{--<a href="#">Каталог</a>--}}
+                    {{--<span>|</span>--}}
+                    {{--<a href="#">Прайс лист</a>--}}
+                    {{--<span>|</span>--}}
+                    {{--<a href="#">Контакты</a>--}}
+                    {{--<span>|</span>--}}
+                    {{--<a href="#">О компании</a>--}}
+                    {{--<span>|</span>--}}
+                    {{--<a href="#">Где купить</a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
 
 
 

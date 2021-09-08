@@ -3,6 +3,31 @@
   src: url("/public/assets/fonts/Montserrat-Regular.ttf");
 }
 
+.catalog {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__wrapper {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__describe {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.catalog__describe span {
+  font-family: Montserrat-Regular;
+  font-size: 1.7rem;
+}
+
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -31,13 +56,13 @@ body {
   background-image: url("/public/assets/userssources/img/slider/06.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
 }
 
 .homepage__navbar {
   display: flex;
   justify-content: center;
   height: 80px;
+  box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
 }
 
 .homepage__navbarmenu {

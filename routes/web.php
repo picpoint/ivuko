@@ -18,7 +18,8 @@ use Illuminate\Support\Facades\Route;
 //});
 
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('homepage');
+Route::get('/catalog', 'CatalogController@index')->name('catalog');
 
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
