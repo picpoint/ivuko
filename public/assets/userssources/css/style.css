@@ -4,13 +4,11 @@
 }
 
 .catalog {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
 
 .catalog__wrapper {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -26,6 +24,31 @@
 .catalog__describe span {
   font-family: Montserrat-Regular;
   font-size: 1.7rem;
+}
+
+.catalog__catalogblock {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog__catalogwrapper {
+  border: 1px solid red;
+  display: flex;
+  width: 65%;
+  height: 300px;
+}
+
+.catalog__catalogfilter {
+  border: 1px solid red;
+  display: flex;
+  width: 25%;
+}
+
+.catalog__catalogcontent {
+  border: 1px solid red;
+  display: flex;
+  width: 75%;
 }
 
 body {
@@ -53,7 +76,7 @@ body {
   flex-direction: column;
   height: 640px;
   width: 100%;
-  background-image: url("/public/assets/userssources/img/slider/06.jpg");
+  background-image: url("/public/assets/userssources/img/slider/03.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -107,10 +130,11 @@ body {
   font-family: Montserrat-Regular;
   font-weight: bold;
   transition: ease-in-out 0.1s;
+  color: #C36F54;
 }
 
 .homepage__navbarlinks a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #C36F54;
   transition: ease-in-out 0.1s;
 }
 
@@ -118,6 +142,7 @@ body {
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
+  color: #C36F54;
 }
 
 .homepage__navbaraccount {
@@ -135,10 +160,11 @@ body {
   font-weight: bold;
   padding: 0 2px;
   transition: ease-in-out 0.1s;
+  color: #C36F54;
 }
 
 .homepage__navbaraccount a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #C36F54;
   transition: ease-in-out 0.1s;
 }
 

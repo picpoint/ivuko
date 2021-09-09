@@ -23,6 +23,19 @@
                 <span>Полный каталог украшений</span>
             </div>
 
+            <div class="catalog__catalogblock">
+                <div class="catalog__catalogwrapper">
+                    <div class="catalog__catalogfilter">
+
+                    </div>
+                    <div class="catalog__catalogcontent">
+
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </section>
 

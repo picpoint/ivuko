@@ -86,7 +86,7 @@ body {
       flex-direction: column;
       height: 640px;
       width: 100%;
-      background-image: url("/public/assets/userssources/img/slider/06.jpg");
+      background-image: url("/public/assets/userssources/img/slider/03.jpg");
       background-size: 100%;
       background-repeat: no-repeat;
       //-webkit-box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
@@ -140,8 +140,9 @@ body {
           font-family: Montserrat-Regular;
           font-weight: bold;
           transition: $transition;
+          color: $colorredgold;
             &:hover {
-              border-bottom: 2px solid white;
+              border-bottom: 2px solid $colorredgold;
               transition: $transition;
             }
         }
@@ -149,6 +150,7 @@ body {
           color: white;
           font-size: 1.5rem;
           font-weight: bold;
+          color: $colorredgold;
         }
     }
     &__navbaraccount {
@@ -165,8 +167,9 @@ body {
         font-weight: bold;
         padding: 0 2px;
         transition: $transition;
+        color: $colorredgold;
           &:hover {
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $colorredgold;
             transition: $transition;
           }
       }
