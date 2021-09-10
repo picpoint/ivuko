@@ -57,7 +57,7 @@
 
 .catalog__filterdefault span {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .catalog__filterdefault a {
@@ -72,7 +72,7 @@
   width: 100%;
   height: 1px;
   background-color: #f5f5f5;
-  margin: 25px 0;
+  margin: 10px 0;
 }
 
 .catalog__formfilter {
@@ -89,7 +89,7 @@
   padding-left: 10px;
   font-family: Montserrat-Regular;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .catalog__onegoods {
@@ -99,14 +99,14 @@
 }
 
 .catalog__onegoods label {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: Montserrat-Regular;
   padding-left: 5px;
 }
 
 .catalog__onegoods input {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
 }
 
 .catalog__filtermaterial {
@@ -118,7 +118,7 @@
   padding-left: 10px;
   font-family: Montserrat-Regular;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .catalog__filterstones {
@@ -130,7 +130,7 @@
   padding-left: 10px;
   font-family: Montserrat-Regular;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .catalog__showfilter {
@@ -149,7 +149,7 @@
 .catalog__catalogcontent {
   border: 1px solid red;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 75%;
 }
