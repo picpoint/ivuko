@@ -8,7 +8,7 @@ use App\Product;
 use App\Stone;
 use Illuminate\Http\Request;
 
-class FilterController extends Controller
+class Deprecated extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,12 +17,12 @@ class FilterController extends Controller
      */
     public function index()
     {
-        $title = 'Каталог';
-        $categories = Category::all();
-        $materials = Material::all();
-        $stones = Stone::all();
-        $products = Product::all();
-        return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
+//        $title = 'Каталог';
+//        $categories = Category::all();
+//        $materials = Material::all();
+//        $stones = Stone::all();
+//        $products = Product::all();
+//        return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
     }
 
     /**
@@ -54,8 +54,11 @@ class FilterController extends Controller
      */
     public function show($id)
     {
-        $product = Product::find($id);
-        return view('productsolo', compact('product'));
+
+
+
+//        $product = Product::find($id);
+//        return view('productsolo', compact('product'));
     }
 
     /**

@@ -20,8 +20,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('homepage');
 //Route::get('/catalog', 'CatalogController@index')->name('catalog');
-Route::resource('/catalog', 'FilterController');
-
+//Route::resource('/catalog', 'FilterController(Deprecated)');
+Route::get('/catalog', 'SelectFilterController@selectFilter')->name('catalog');
+Route::post('/catalog', 'SelectFilterController@selectFilter')->name('catalog');
+Route::get('/catalog/{slug}', 'ProductSingle@single');
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/', 'MainController@index')->name('admin.index');
