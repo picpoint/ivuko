@@ -8,7 +8,7 @@
       flex-direction: column;
     }
     &__describe {
-      border: $border;
+      //border: $border;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -21,17 +21,19 @@
     }
 
     &__catalogblock {
-      border: $border;
+      //border: $border;
       display: flex;
       justify-content: center;
     }
     &__catalogwrapper {
-      border: $border;
+      //border: $border;
       display: flex;
       width: 65%;
     }
     &__catalogfilter {
-      border: $border;
+      border-top: 1px solid gray;
+      border-left: 1px solid gray;
+      border-bottom: 1px solid gray;
       display: flex;
       flex-direction: column;
       width: 25%;
@@ -139,9 +141,10 @@
 
 
     &__catalogcontent {
-      border: $border;
+      border: 1px solid gray;
       display: flex;
       justify-content: space-around;
+      align-content: flex-start;
       flex-wrap: wrap;
       width: 75%;
     }

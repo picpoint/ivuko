@@ -34,56 +34,45 @@
                         <div class="catalog__separate"></div>
 
                         <form action="#" method="post" name="formfilter" class="catalog__formfilter">
+                            @csrf
                             <div class="catalog__filtercategory">
                                 <span>Категория украшений</span>
-                                <div class="catalog__onegoods">
-                                    <input type="checkbox" name="zhenskie-kolca" id="zhenskie-kolca">
-                                    <label for="zhenskie-kolca">Женские кольца</label>
-                                </div>
-                                <div class="catalog__onegoods">
-                                    <input type="checkbox" name="zaponki" id="zaponki">
-                                    <label for="zaponki">Запонки</label>
-                                </div>
-                                <div class="catalog__onegoods">
-                                    <input type="checkbox" name="muzhskie-kolca" id="muzhskie-kolca">
-                                    <label for="muzhskie-kolca">Мужские кольца</label>
-                                </div>
+
+                                @foreach($categories as $category)
+                                    <div class="catalog__onegoods">
+                                        <input type="checkbox" name="{{ $category->slug }}" id="{{ $category->slug }}">
+                                        <label for="{{ $category->slug }}">{{ $category->title }}</label>
+                                    </div>
+                                @endforeach
+
                             </div>
 
                             <div class="catalog__separate"></div>
 
                             <div class="catalog__filtermaterial">
                                 <span>Материал</span>
-                                <div class="catalog__onegoods">
-                                    <input type="checkbox" name="zoloto" id="zoloto">
-                                    <label for="zoloto">Золото</label>
-                                </div>
-                                <div class="catalog__onegoods">
-                                    <input type="checkbox" name="serebro" id="serebro">
-                                    <label for="serebro">Серебро</label>
-                                </div>
+
+                                @foreach($materials as $material)
+                                    <div class="catalog__onegoods">
+                                        <input type="checkbox" name="{{ $material->slug }}" id="{{ $material->slug }}">
+                                        <label for="{{ $material->slug }}">{{ $material->title }}</label>
+                                    </div>
+                                @endforeach
+
                             </div>
 
                             <div class="catalog__separate"></div>
 
                             <div class="catalog__filterstones">
                                 <span>Вставки</span>
-                                <div class="catalog__onegoods">
-                                    <input type="checkbox" name="agat" id="agat">
-                                    <label for="agat">Агат</label>
-                                </div>
-                                <div class="catalog__onegoods">
-                                    <input type="checkbox" name="aleksandrit" id="aleksandrit">
-                                    <label for="aleksandrit">Александрит</label>
-                                </div>
-                                <div class="catalog__onegoods">
-                                    <input type="checkbox" name="ametist" id="ametist">
-                                    <label for="ametist">Аметист</label>
-                                </div>
-                                <div class="catalog__onegoods">
-                                    <input type="checkbox" name="bez-vstavki" id="bez-vstavki">
-                                    <label for="bez-vstavki">Без вставки</label>
-                                </div>
+
+                                @foreach($stones as $stone)
+                                    <div class="catalog__onegoods">
+                                        <input type="checkbox" name="{{ $stone->slug }}" id="{{ $stone->slug }}">
+                                        <label for="{{ $stone->slug }}">{{ $stone->title }}</label>
+                                    </div>
+                                @endforeach
+
                             </div>
 
                             <div class="catalog__separate"></div>
@@ -95,126 +84,21 @@
                     </div>
 
                     <div class="catalog__catalogcontent">
-                        <div class="homepage__cardproduct">
-                            <div class="homepage__cardimg">
-                                <a href="#">
-                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                                </a>
+
+                        @foreach($products as $product)
+                            <div class="homepage__cardproduct">
+                                <div class="homepage__cardimg">
+                                    <a href="/catalog/{{ $product->id }}">
+                                        <img src="public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">
+                                    </a>
+                                </div>
+                                <div class="homepage__cardinfo">
+                                    <span>{{ $product->title }}</span>
+                                    <span>{{ $product->price }} руб.</span>
+                                </div>
                             </div>
-                            <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
-                                <span>Tic small Alessi</span>
-                                <span>$85.0</span>
-                            </div>
-                        </div>
-                        <div class="homepage__cardproduct">
-                            <div class="homepage__cardimg">
-                                <a href="#">
-                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                                </a>
-                            </div>
-                            <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
-                                <span>Tic small Alessi</span>
-                                <span>$85.0</span>
-                            </div>
-                        </div>
-                        <div class="homepage__cardproduct">
-                            <div class="homepage__cardimg">
-                                <a href="#">
-                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                                </a>
-                            </div>
-                            <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
-                                <span>Tic small Alessi</span>
-                                <span>$85.0</span>
-                            </div>
-                        </div>
-                        <div class="homepage__cardproduct">
-                            <div class="homepage__cardimg">
-                                <a href="#">
-                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                                </a>
-                            </div>
-                            <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
-                                <span>Tic small Alessi</span>
-                                <span>$85.0</span>
-                            </div>
-                        </div>
-                        <div class="homepage__cardproduct">
-                            <div class="homepage__cardimg">
-                                <a href="#">
-                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                                </a>
-                            </div>
-                            <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
-                                <span>Tic small Alessi</span>
-                                <span>$85.0</span>
-                            </div>
-                        </div>
-                        <div class="homepage__cardproduct">
-                            <div class="homepage__cardimg">
-                                <a href="#">
-                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                                </a>
-                            </div>
-                            <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
-                                <span>Tic small Alessi</span>
-                                <span>$85.0</span>
-                            </div>
-                        </div>
-                        <div class="homepage__cardproduct">
-                            <div class="homepage__cardimg">
-                                <a href="#">
-                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                                </a>
-                            </div>
-                            <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
-                                <span>Tic small Alessi</span>
-                                <span>$85.0</span>
-                            </div>
-                        </div>
-                        <div class="homepage__cardproduct">
-                            <div class="homepage__cardimg">
-                                <a href="#">
-                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                                </a>
-                            </div>
-                            <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
-                                <span>Tic small Alessi</span>
-                                <span>$85.0</span>
-                            </div>
-                        </div>
-                        <div class="homepage__cardproduct">
-                            <div class="homepage__cardimg">
-                                <a href="#">
-                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                                </a>
-                            </div>
-                            <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
-                                <span>Tic small Alessi</span>
-                                <span>$85.0</span>
-                            </div>
-                        </div>
-                        <div class="homepage__cardproduct">
-                            <div class="homepage__cardimg">
-                                <a href="#">
-                                    <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                                </a>
-                            </div>
-                            <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
-                                <span>Tic small Alessi</span>
-                                <span>$85.0</span>
-                            </div>
-                        </div>
+                        @endforeach
+
                     </div>
 
                 </div>

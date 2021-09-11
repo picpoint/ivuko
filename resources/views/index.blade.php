@@ -93,7 +93,7 @@
                                 </a>
                             </div>
                             <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
                                 <span>Tic small Alessi</span>
                                 <span>$85.0</span>
                             </div>
@@ -105,7 +105,7 @@
                                 </a>
                             </div>
                             <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
                                 <span>Tic small Alessi</span>
                                 <span>$85.0</span>
                             </div>
@@ -117,7 +117,7 @@
                                 </a>
                             </div>
                             <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
                                 <span>Tic small Alessi</span>
                                 <span>$85.0</span>
                             </div>
@@ -129,7 +129,7 @@
                                 </a>
                             </div>
                             <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
                                 <span>Tic small Alessi</span>
                                 <span>$85.0</span>
                             </div>
@@ -141,7 +141,7 @@
                                 </a>
                             </div>
                             <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
                                 <span>Tic small Alessi</span>
                                 <span>$85.0</span>
                             </div>
@@ -153,7 +153,7 @@
                                 </a>
                             </div>
                             <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
                                 <span>Tic small Alessi</span>
                                 <span>$85.0</span>
                             </div>
@@ -165,7 +165,7 @@
                                 </a>
                             </div>
                             <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
                                 <span>Tic small Alessi</span>
                                 <span>$85.0</span>
                             </div>
@@ -177,7 +177,7 @@
                                 </a>
                             </div>
                             <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
                                 <span>Tic small Alessi</span>
                                 <span>$85.0</span>
                             </div>
@@ -189,7 +189,7 @@
                                 </a>
                             </div>
                             <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
                                 <span>Tic small Alessi</span>
                                 <span>$85.0</span>
                             </div>
@@ -201,7 +201,7 @@
                                 </a>
                             </div>
                             <div class="homepage__cardinfo">
-                                <img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">
+                                {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
                                 <span>Tic small Alessi</span>
                                 <span>$85.0</span>
                             </div>

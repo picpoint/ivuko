@@ -6,7 +6,8 @@
             </a>
         </div>
         <div class="homepage__navbarlinks">
-            <a href="{{ route('catalog') }}">Каталог</a>
+            {{--<a href="{{ route('catalog') }}">Каталог</a>--}}
+            <a href="/catalog">Каталог</a>
             <span>|</span>
             <a href="#">Прайс лист</a>
             <span>|</span>
