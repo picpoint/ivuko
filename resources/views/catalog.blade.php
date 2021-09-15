@@ -41,7 +41,7 @@
 
                                 @foreach($categories as $category)
                                     <div class="catalog__onegoods">
-                                        <input type="checkbox" name="{{ $category->slug }}" id="{{ $category->slug }}" value="{{ $category->id }}">
+                                        <input type="checkbox" name="c_{{ $category->slug }}" id="{{ $category->slug }}" value="{{ $category->id }}">
                                         <label for="{{ $category->slug }}">{{ $category->title }}</label>
                                     </div>
                                 @endforeach
@@ -55,7 +55,7 @@
 
                                 @foreach($materials as $material)
                                     <div class="catalog__onegoods">
-                                        <input type="checkbox" name="{{ $material->slug }}" id="{{ $material->slug }}" value="{{ $material->id }}">
+                                        <input type="checkbox" name="m_{{ $material->slug }}" id="{{ $material->slug }}" value="{{ $material->id }}">
                                         <label for="{{ $material->slug }}">{{ $material->title }}</label>
                                     </div>
                                 @endforeach
@@ -69,7 +69,7 @@
 
                                 @foreach($stones as $stone)
                                     <div class="catalog__onegoods">
-                                        <input type="checkbox" name="{{ $stone->slug }}" id="{{ $stone->slug }}" value="{{ $stone->id }}">
+                                        <input type="checkbox" name="s_{{ $stone->slug }}" id="{{ $stone->slug }}" value="{{ $stone->id }}">
                                         <label for="{{ $stone->slug }}">{{ $stone->title }}</label>
                                     </div>
                                 @endforeach
@@ -78,7 +78,7 @@
 
                             <div class="catalog__separate"></div>
 
-                            <button type="submit" name="showfilter" id="showfilter" class="catalog__showfilter">Смотреть</button>
+                            <button type="submit" id="showfilter" class="catalog__showfilter">Смотреть</button>
 
                         </form>
 
