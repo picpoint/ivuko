@@ -25,70 +25,91 @@ class SelectFilterController extends Controller
             return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
         } else {
 //            dd($_POST);
-            $arrCategories = [];
-            $arrMaterials = [];
-            $arrStones = [];
-            $arrProducts = [];
 
+            $categories = Category::all();
+            $materials = Material::all();
+            $stones = Stone::all();
+
+            $res = '';
             foreach ($_POST as $key => $value) {
-                if ($key == '_token') {
-                    continue;
-                }
-
-
-                if (substr($key, '0', '2') == 'c_') {
-                    $arrCategories[] = $value; //substr($key, '2');
-                }
-
-                if (substr($key, '0', '2') == 'm_') {
-                    $arrMaterials[] = $value; //substr($key, '2');
-                }
-
-                if (substr($key, '0', '2') == 's_') {
-                    $arrStones[] = $value; //substr($key, '2');
-                }
+                $res = $value;
             }
 
-            dump($arrCategories);
-            echo "<br>";
-            dump($arrMaterials);
-            echo "<br>";
-            dump($arrStones);
+//            dd($res);
+
+//            $products = Product::all();
+            $products = DB::table('products')->where('category_id', '=', $res)->get();
+
+//            dd($prod);
+
+            return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
 
 
-            $categories = DB::table('categories')->where(
-                function ($arrCategories) {
-                    foreach ($arrCategories as $key => $value) {
-                        ['category_id', '=', '$value'];
-                    }
-                }
-            )->get();
 
 
-            $materials = DB::table('materials')->where(
-                function ($arrMaterials) {
-                    foreach ($arrMaterials as $key => $value) {
-                        ['material', '=', '$value'];
-                    }
-                }
-            )->get();
+//            $arrCategories = [];
+//            $arrMaterials = [];
+//            $arrStones = [];
 
-
-            $stones = DB::table('stones')->where(
-                function ($arrStones) {
-                    foreach ($arrStones as $key => $value) {
-                        ['stone', '=', '$value'];
-                    }
-                }
-            )->get();
-
-
-            $products = DB::table('products')->union($categories)->union($materials)->union($stones)->get();
+//            foreach ($_POST as $key => $value) {
+//                if ($key == '_token') {
+//                    continue;
+//                }
+//
+//
+//                if (substr($key, '0', '2') == 'c_') {
+//                    $arrCategories[] = $value; //substr($key, '2');
+//                }
+//
+//                if (substr($key, '0', '2') == 'm_') {
+//                    $arrMaterials[] = $value; //substr($key, '2');
+//                }
+//
+//                if (substr($key, '0', '2') == 's_') {
+//                    $arrStones[] = $value; //substr($key, '2');
+//                }
+//            }
+//
+//            dump($arrCategories);
+//            echo "<br>";
+//            dump($arrMaterials);
+//            echo "<br>";
+//            dump($arrStones);
+//
+//
+//            $categories = DB::table('categories')->where(
+//                function ($arrCategories) {
+//                    foreach ($arrCategories as $key => $value) {
+//                        ['category_id', '=', '$value'];
+//                    }
+//                }
+//            )->get();
+//
+//
+//            $materials = DB::table('materials')->where(
+//                function ($arrMaterials) {
+//                    foreach ($arrMaterials as $key => $value) {
+//                        ['material', '=', '$value'];
+//                    }
+//                }
+//            )->get();
+//
+//
+//            $stones = DB::table('stones')->where(
+//                function ($arrStones) {
+//                    foreach ($arrStones as $key => $value) {
+//                        ['stone', '=', '$value'];
+//                    }
+//                }
+//            )->get();
+//
+//
+//            $products = DB::table('products')->union($categories)->union($materials)->union($stones)->get();
 
 
         }
 
-        return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
+//        return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
     }
 
 }

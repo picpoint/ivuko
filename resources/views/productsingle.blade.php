@@ -10,13 +10,19 @@
 <body>
 
     <div>
-        <img src="\public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">
+        <img style="width: 500px; height: 500px" src="\public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">
         <br>
         <span>Название -  {{ $product->title }}</span>
         <br>
+        <span>Категория -  {{ $product->category_id }}</span>
+        <br>
         <span>Артикул - {{ $product->vendor_code }}</span>
         <br>
-        <span>Вес - {{ $product->weigth }}</span>
+        <span>Материал - {{ $product->material }}</span>
+        <br>
+        <span>Вставка - {{ $product->stone }}</span>
+        <br>
+        <span>Вес - {{ $product->weight}}</span>
         <br>
         <span>Размер - {{ $product->size }}</span>
         <br>
