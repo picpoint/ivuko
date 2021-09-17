@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 01 2021 г., 16:03
+-- Время создания: Сен 17 2021 г., 08:50
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.4.5
 
@@ -86,7 +86,8 @@ CREATE TABLE `materials` (
 
 INSERT INTO `materials` (`id`, `title`, `slug`, `created_at`, `updated_at`) VALUES
 (1, 'Золото', 'zoloto', '2021-08-27 07:11:46', '2021-08-27 07:11:46'),
-(2, 'Серебро', 'serebro', '2021-08-27 07:11:54', '2021-08-27 07:11:54');
+(2, 'Серебро', 'serebro', '2021-08-27 07:11:54', '2021-08-27 07:11:54'),
+(3, 'Другое', 'drugoe', '2021-09-15 10:19:22', '2021-09-15 10:19:22');
 
 -- --------------------------------------------------------
 
@@ -139,13 +140,20 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `title`, `slug`, `category_id`, `vendor_code`, `material`, `stone`, `weight`, `size`, `price`, `picture`, `created_at`, `updated_at`) VALUES
-(23, 'Запонки', 'zaponki-1', '2', '160033', '1', '16', '6.49', NULL, '47994', 'images/zaponki/160033.jpg', '2021-08-31 10:32:12', '2021-08-31 10:32:12'),
-(24, 'Подвеска из серебра SKAZKA', 'podveska-iz-serebra-skazka', '5', '52855', '2', '16', '0.66', NULL, '800', 'images/podveski/52855.jpg', '2021-08-31 10:38:03', '2021-08-31 10:38:03'),
-(25, 'Подвеска из золота Золотий ВiК', 'podveska-iz-zolota-zolotiy-vik', '5', '1343269/цв', '1', '16', '1.09', NULL, '7783', 'images/podveski/1343269.jpg', '2021-08-31 10:39:21', '2021-08-31 10:39:21'),
-(26, 'Кольцо мужское из золота', 'kolco-muzhskoe-iz-zolota', '3', '1200005149', '1', '16', '3.31', '20.5', '23071', 'images/muzhskie-kolca/1200005149.jpg', '2021-08-31 10:41:59', '2021-08-31 10:41:59'),
-(27, 'Кольцо мужское из золота DEL\'TA', 'kolco-muzhskoe-iz-zolota-del-ta', '3', '040272', '1', '4', '4.57', '22.5', '31853', 'images/muzhskie-kolca/040272.jpg', '2021-08-31 10:43:17', '2021-08-31 10:43:17'),
-(28, 'Кольцо мужское с бриллиантом Бриант', 'kolco-muzhskoe-s-brilliantom-briant', '3', 'RW63777D', '1', '5', '7.23', '21.5', '136510', 'images/muzhskie-kolca/rw63777d.jpg', '2021-08-31 10:44:49', '2021-08-31 10:44:49'),
-(30, 'ZZZZ', 'zzzz', '9', '33333', '1', '19', '111', '222', '333', 'images/chasy/46533.jpg', '2021-09-01 03:15:14', '2021-09-01 09:35:20');
+(43, 'Кольцо из серебра', 'kolco-iz-serebra', '1', '90-01-7513-06', '2', '14', '1.25', '18.0', '700', 'images/zhenskie-kolca/90_01_7513_06.jpg', '2021-09-15 10:08:17', '2021-09-15 10:08:17'),
+(44, 'Кольцо из золота SOKOLOV', 'kolco-iz-zolota-sokolov', '1', '716717', '1', '15', '1.54', '17.0', '8840', 'images/zhenskie-kolca/716717.jpg', '2021-09-15 10:13:26', '2021-09-15 10:13:26'),
+(45, 'Кольцо из серебра', 'kolco-iz-serebra-1', '1', '90-01-7241-00', '2', '4', '0.9', '16.5', '567', 'images/zhenskie-kolca/90_01_7241_00.jpg', '2021-09-15 10:16:10', '2021-09-15 10:16:10'),
+(46, 'Кольцо из серебра Янтарная волна', 'kolco-iz-serebra-yantarnaya-volna', '1', '820040', '2', '20', '1.65', '17.0', '636', 'images/zhenskie-kolca/820040.jpg', '2021-09-15 10:17:20', '2021-09-15 10:17:20'),
+(47, 'А07-64рАжурное Кольцо с бриллиантом Помельников А07-64р\"Ажурное\"', 'a07-64razhurnoe-kolco-s-brilliantom-pomelnikov-a07-64r-azhurnoe', '1', 'А07-64р\"Ажурное\"', '1', '13', '8.36', '17.2', '913500', 'images/zhenskie-kolca/a07_64r.jpg', '2021-09-15 10:18:49', '2021-09-15 10:18:49'),
+(48, 'Кольцо UNOde50 ANI0390BPLMTL0M', 'kolco-unode50-ani0390bplmtl0m', '1', 'ANI0390BPLMTL0M', '3', '4', '0', NULL, '7210', 'images/zhenskie-kolca/ani0390bplmtl0m.jpg', '2021-09-15 10:21:49', '2021-09-15 10:21:49'),
+(49, 'Запонки из серебра', 'zaponki-iz-serebra', '2', '141205р', '2', '16', '10.8', NULL, '3780', 'images/zaponki/141205r.jpg', '2021-09-15 10:24:25', '2021-09-15 10:24:25'),
+(50, 'Запонки из серебра', 'zaponki-iz-serebra-1', '2', '37-ЗПЛ105-04', '2', '4', '10.43', NULL, '3640', 'images/zaponki/37_zpl105_04.jpg', '2021-09-15 10:26:03', '2021-09-15 10:26:03'),
+(51, 'Запонки из золота DEL\'TA', 'zaponki-iz-zolota-del-ta', '2', '660041', '1', '4', '5.51', NULL, '31627', 'images/zaponki/660041.jpg', '2021-09-15 10:27:08', '2021-09-15 10:27:08'),
+(52, 'А05-17 Клетка Запонки с бриллиантом Помельников А05-17 \"Клетка\"', 'a05-17-kletka-zaponki-s-brilliantom-pomelnikov-a05-17-kletka', '2', 'А05-17 \"Клетка\"', '1', '5', '23.3', NULL, '392700', 'images/zaponki/a05_17_kletka_zaponki_a05_17.jpg', '2021-09-15 10:28:09', '2021-09-15 10:28:09'),
+(53, 'Кольцо мужское из серебра Маршал', 'kolco-muzhskoe-iz-serebra-marshal', '3', 'КМ-284 Родир_с', '2', '12', '3.71', '20.5', '1948', 'images/muzhskie-kolca/km_284_rodir_s.jpg', '2021-09-15 10:43:37', '2021-09-15 10:43:37'),
+(54, 'Кольцо мужское из серебра Ив.Ю.Ко.', 'kolco-muzhskoe-iz-serebra-iv-yu-ko', '3', '3330604р', '2', '18', '5.21', '19.5', '2553', 'images/muzhskie-kolca/3330604r.jpg', '2021-09-15 10:45:03', '2021-09-15 10:45:03'),
+(55, 'Кольцо мужское из золота', 'kolco-muzhskoe-iz-zolota', '3', 'И112', '1', '11', '9.99', '20.0', '74825', 'images/muzhskie-kolca/i112.jpg', '2021-09-15 10:47:27', '2021-09-15 10:47:27'),
+(56, 'Кольцо мужское с бриллиантом ГАЛЕРЕЯ ЭКСКЛЮЗИВА', 'kolco-muzhskoe-s-brilliantom-galereya-eksklyuziva', '3', 'КШМ-90500', '1', '5', '8.9', '20.5', '190050', 'images/muzhskie-kolca/kshm_90500.jpg', '2021-09-15 10:48:35', '2021-09-15 10:48:35');
 
 -- --------------------------------------------------------
 
@@ -271,7 +279,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT для таблицы `materials`
 --
 ALTER TABLE `materials`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `migrations`
@@ -283,7 +291,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблицы `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT для таблицы `stones`
