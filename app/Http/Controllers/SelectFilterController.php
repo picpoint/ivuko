@@ -52,13 +52,33 @@ class SelectFilterController extends Controller
 
             }
 
-            dump($arrCategories);
-            dump($arrMaterials);
-            dd($arrStones);
+//            dump($arrCategories);
+//            dump($arrMaterials);
+//            dd($arrStones);
 
 
 
-            $products = DB::table('products')->whereIn('category_id', $arrCategories)->get();
+//            $products = DB::table('products')
+//                ->whereIn('category_id', $arrCategories)
+//                ->where(function($query) {
+//                    $query->where('material', 2);
+//                })
+//                ->get();
+
+
+//            $products = DB::table('products')
+//                ->whereIn('category_id', $arrCategories)
+//                ->whereIn('material', $arrMaterials)
+//                ->whereIn('stone', $arrStones)
+//                ->get();
+
+
+            $products = DB::table('products')
+                ->orWhereIn('category_id', $arrCategories)
+                ->whereIn('material', $arrMaterials)
+                ->get();
+
+
 
             return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
 
