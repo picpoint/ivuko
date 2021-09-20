@@ -24,23 +24,41 @@ class SelectFilterController extends Controller
 
             return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
         } else {
-//            dd($_POST);
 
             $categories = Category::all();
             $materials = Material::all();
             $stones = Stone::all();
 
-            $res = [];
+            $arrCategories = [];
+            $arrMaterials = [];
+            $arrStones = [];
 
             foreach ($_POST as $key => $value) {
                 if ($key == "_token") {
                     continue;
                 }
-                $res[] = $value;
+
+                if (substr($key, 0, 2) == 'c_') {
+                    $arrCategories[] = $value;
+                }
+
+                if (substr($key, 0, 2) == 'm_') {
+                    $arrMaterials[] = $value;
+                }
+
+                if (substr($key, 0, 2) == 's_') {
+                    $arrStones[] = $value;
+                }
+
             }
 
+            dump($arrCategories);
+            dump($arrMaterials);
+            dd($arrStones);
 
-            $products = DB::table('products')->whereIn('category_id', $res)->get();
+
+
+            $products = DB::table('products')->whereIn('category_id', $arrCategories)->get();
 
             return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
 

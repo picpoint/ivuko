@@ -28,7 +28,7 @@
                     <div class="catalog__catalogfilter">
                         <div class="catalog__filterdefault">
                             <span>Фильтры</span>
-                            <a href="#">Сбросить</a>
+                            <a href="{{ route('catalog') }}">Сбросить</a>
                         </div>
 
                         <div class="catalog__separate"></div>
@@ -55,8 +55,8 @@
 
                                 @foreach($materials as $material)
                                     <div class="catalog__onegoods">
-                                        <input type="checkbox" name="m_{{ $material->slug }}" id="{{ $material->slug }}" value="{{ $material->id }}">
-                                        <label for="{{ $material->slug }}">{{ $material->title }}</label>
+                                        <input type="checkbox" name="m_{{ $material->slug }}" id="m_{{ $material->slug }}" value="{{ $material->id }}">
+                                        <label for="m_{{ $material->slug }}">{{ $material->title }}</label>
                                     </div>
                                 @endforeach
 
