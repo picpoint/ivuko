@@ -89,7 +89,7 @@
                         @foreach($products as $product)
                             <div class="homepage__cardproduct">
                                 <div class="homepage__cardimg">
-                                    <a href="/catalog/{{ $product->id }}">
+                                    <a href="/catalog/productsingle">
                                         <img src="public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">
                                     </a>
                                 </div>

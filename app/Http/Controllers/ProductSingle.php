@@ -9,8 +9,9 @@ class ProductSingle extends Controller
 {
 
     public function single($id) {
+        $title = 'Каталог изделий Ивановской ювелирной компании';
         $product = Product::find($id);
-        return view('productsingle', compact('product'));
+        return view('productsingle', compact('product', 'title'));
     }
 
 }

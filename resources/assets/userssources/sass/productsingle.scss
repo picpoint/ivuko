@@ -1,0 +1,16 @@
+.productsingle {
+  border: $border;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+    &__wrapper {
+      border: $border;
+      display: flex;
+    }
+    &__topmenu {
+      border: $border;
+      display: flex;
+      width: 500px;
+      height: 100px;
+    }
+}
