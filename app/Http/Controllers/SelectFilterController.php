@@ -53,6 +53,12 @@ class SelectFilterController extends Controller
             }
 
 
+            if (count($arrCategories) == 0) {
+                for ($i = 1; $i <= 10; $i++) {
+                    $arrCategories[] = "$i";
+                }
+            }
+
 
             if (count($arrMaterials) == 0) {
                 for ($i = 1; $i <= 3; $i++) {
