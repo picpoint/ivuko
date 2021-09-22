@@ -1,16 +1,33 @@
 .productsingle {
   border: $border;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
     &__wrapper {
       border: $border;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    &__topmenu {
+    &__product {
       border: $border;
       display: flex;
-      width: 500px;
-      height: 100px;
+      align-self: center;
+      width: 65%;
+      height: 700px;
     }
+    &__pictblock {
+      border: $border;
+      display: flex;
+      width: 50%;
+      overflow: hidden;
+        img {
+          border: $border;
+          width: 100%;
+          height: auto;
+          flex-shrink: 0;
+        }
+    }
+
 }

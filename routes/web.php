@@ -22,7 +22,7 @@ Route::get('/', 'HomeController@index')->name('homepage');
 
 Route::match(['get', 'post'], '/catalog', 'SelectFilterController@selectFilter')->name('catalog');
 
-Route::get('/catalog/productsingle/{id}', 'ProductSingle@single')->name('catalog/productsingle/{id}');
+Route::get('/catalog/productsingle/{id}', 'ProductSingle@single')->name('productsingle');
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/', 'MainController@index')->name('admin.index');
