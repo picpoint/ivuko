@@ -17,13 +17,17 @@ class SelectFilterController extends Controller
         $title = 'Каталог';
 
         if (empty($_POST)) {
+            $pagination = 'yes';
+
             $categories = Category::all();
             $materials = Material::all();
             $stones = Stone::all();
-            $products = Product::all();
+            $products = Product::paginate(18);
 
-            return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
+            return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products', 'pagination'));
         } else {
+
+            $pagination = 'no';
 
             $categories = Category::all();
             $materials = Material::all();
@@ -83,7 +87,7 @@ class SelectFilterController extends Controller
 
 
 
-            return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products'));
+            return view('catalog', compact('title', 'categories', 'materials', 'stones', 'products', 'pagination'));
 
         }
 

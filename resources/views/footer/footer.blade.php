@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="homepage__navbarlinks">
-        <a href="#">Каталог</a>
+        <a href="{{ route('catalog') }}">Каталог</a>
         <span>|</span>
         <a href="#">Прайс лист</a>
         <span>|</span>

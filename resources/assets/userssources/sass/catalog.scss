@@ -149,5 +149,47 @@
       width: 75%;
     }
 
+    &__footer {
+      //border: $border;
+      display: flex;
+      justify-content: center;
+      font-family: Montserrat-Regular;
+      margin-bottom: 50px;
+        ul {
+          //border: 2px solid $colorlightgray;
+          display: flex;
+          flex-direction: row;
+          //width: 200px;
+          //height: 35px;
+            li {
+              border: 2px solid $colorlightgray;
+              width: 40px;
+              height: 40px;
+              list-style-type: none;
+              font-size: 1.3rem;
+              font-weight: bold;
+              background-color: #4A81B0;
+              border-radius: 5px;
+                span {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 40px;
+                  height: 40px;
+                  color: darkblue;
+                }
+                a {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-decoration: none;
+                  color: white;
+                  width: 40px;
+                  height: 40px;
+                }
+            }
+        }
+    }
+
 
 }

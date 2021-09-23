@@ -34,7 +34,6 @@
                         <div class="catalog__separate"></div>
 
                         <form action="#" method="post" name="formfilter" class="catalog__formfilter">
-                        {{--<form action="{{ route('categories.update', ['category' => $category->id]) }}" method="post">--}}
                             @csrf
                             <div class="catalog__filtercategory">
                                 <span>Категория украшений</span>
@@ -103,6 +102,14 @@
                     </div>
 
                 </div>
+            </div>
+
+            <div class="catalog__footer">
+                {{--@if($pagination == 'yes')--}}
+                    {{--{{ $products->links() }}--}}
+                {{--@else--}}
+
+                {{--@endif--}}
             </div>
 
 
