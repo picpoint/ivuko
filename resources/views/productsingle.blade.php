@@ -19,10 +19,15 @@
         <div class="productsingle__wrapper">
             @include('navbar.navbar')
 
-
             <div class="productsingle__product">
                 <div class="productsingle__pictblock">
                     <img src="\public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">
+                </div>
+                <div class="productsingle__describe">
+                    <h3>{{ $product->title }}</h3>
+                    <span>Артикул изделия: <b>{{ $product->vendor_code }}</b></span>
+                    <span>Категория: <b>{{ $product->category->title }}</b></span>
+                    <span>Материал: <b>{{ $product->material->title }}</b></span>
                 </div>
             </div>
 

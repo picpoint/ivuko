@@ -1,33 +1,52 @@
 .productsingle {
-  border: $border;
+  //border: $border;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  //height: 100vh;
+  //width: 100vw;
     &__wrapper {
-      border: $border;
+      //border: $border;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
     &__product {
-      border: $border;
+      //border: $border;
       display: flex;
       align-self: center;
       width: 65%;
-      height: 700px;
+      //height: 700px;
+      margin-top: 50px;
     }
     &__pictblock {
-      border: $border;
+      border: 2px solid $colorlightgray;
       display: flex;
+      justify-content: center;
+      align-items: center;
       width: 50%;
-      overflow: hidden;
         img {
-          border: $border;
           width: 100%;
           height: auto;
-          flex-shrink: 0;
+        }
+    }
+    &__describe {
+      //border: $border;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+        h3 {
+          //border: $border;
+          text-align: center;
+          font-size: 1.5rem;
+        }
+        span {
+          //border: $border;
+          font-size: 1.3rem;
+          margin-top: 7px;
         }
     }
 
 }
+
+
+

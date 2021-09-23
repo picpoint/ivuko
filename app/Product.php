@@ -27,6 +27,10 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function material() {
+        return $this->belongsTo(Material::class);
+    }
+
 
 
 }
