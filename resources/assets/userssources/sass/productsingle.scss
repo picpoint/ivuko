@@ -8,7 +8,6 @@
       //border: $border;
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
     &__product {
       //border: $border;
@@ -47,6 +46,12 @@
           font-size: 1.2rem;
           margin-bottom: 5px;
         }
+    }
+
+    &__footer {
+      border: $border;
+      align-self: flex-end;
+      width: 100%;
     }
 
 }

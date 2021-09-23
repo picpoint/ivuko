@@ -23,6 +23,7 @@
                 <div class="productsingle__pictblock">
                     <img src="\public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">
                 </div>
+
                 <div class="productsingle__describe">
                     <h3>{{ $product->title }}</h3>
                     <span>Артикул изделия: <b>{{ $product->vendor_code }}</b></span>
@@ -39,6 +40,10 @@
                     </span>
                     <span>Цена: <b>{{ $product->price }} р.</b></span>
                 </div>
+            </div>
+
+            <div class="productsingle__footer">
+                @include('footer.footer')
             </div>
 
         </div>

@@ -162,7 +162,6 @@
 .productsingle__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .productsingle__product {
@@ -202,6 +201,12 @@
 .productsingle__describe span {
   font-size: 1.2rem;
   margin-bottom: 5px;
+}
+
+.productsingle__footer {
+  border: 1px solid red;
+  align-self: flex-end;
+  width: 100%;
 }
 
 body {
