@@ -9,7 +9,7 @@ class Product extends Model
 {
     use Sluggable;
 
-    protected $fillable = ['title', 'slug', 'category_id', 'vendor_code', 'material', 'stone', 'weight', 'size', 'price', 'picture'];
+    protected $fillable = ['title', 'slug', 'category_id', 'vendor_code', 'material_id', 'stone_id', 'weight', 'size', 'price', 'picture'];
 
 
     public function sluggable(): array
@@ -29,6 +29,10 @@ class Product extends Model
 
     public function material() {
         return $this->belongsTo(Material::class);
+    }
+
+    public function stone() {
+        return $this->belongsTo(Stone::class);
     }
 
 

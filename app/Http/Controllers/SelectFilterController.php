@@ -77,8 +77,8 @@ class SelectFilterController extends Controller
 
             $products = DB::table('products')
                 ->whereIn('category_id', $arrCategories)
-                ->whereIn('material', $arrMaterials)
-                ->whereIn('stone', $arrStones)
+                ->whereIn('material_id', $arrMaterials)
+                ->whereIn('stone_id', $arrStones)
                 ->get();
 
 

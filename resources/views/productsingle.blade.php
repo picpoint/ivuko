@@ -28,32 +28,21 @@
                     <span>Артикул изделия: <b>{{ $product->vendor_code }}</b></span>
                     <span>Категория: <b>{{ $product->category->title }}</b></span>
                     <span>Материал: <b>{{ $product->material->title }}</b></span>
+                    <span>Вставка: <b>{{ $product->stone->title }}</b></span>
+                    <span>Вес: <b>{{ $product->weight }}</b></span>
+                    <span>Размер:
+                            @if(empty($product->size))
+                                <i><u>Нет размера</u></i>
+                            @else
+                                <b>{{ $product->size }}</b>
+                            @endif
+                    </span>
+                    <span>Цена: <b>{{ $product->price }} р.</b></span>
                 </div>
             </div>
 
         </div>
     </section>
-
-
-    {{--<div>--}}
-        {{--<img style="width: 500px; height: 500px" src="\public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">--}}
-        {{--<br>--}}
-        {{--<span>Название -  {{ $product->title }}</span>--}}
-        {{--<br>--}}
-        {{--<span>Категория -  {{ $product->category_id }}</span>--}}
-        {{--<br>--}}
-        {{--<span>Артикул - {{ $product->vendor_code }}</span>--}}
-        {{--<br>--}}
-        {{--<span>Материал - {{ $product->material }}</span>--}}
-        {{--<br>--}}
-        {{--<span>Вставка - {{ $product->stone }}</span>--}}
-        {{--<br>--}}
-        {{--<span>Вес - {{ $product->weight}}</span>--}}
-        {{--<br>--}}
-        {{--<span>Размер - {{ $product->size }}</span>--}}
-        {{--<br>--}}
-        {{--<span>Цена - {{ $product->price }}</span>--}}
-    {{--</div>--}}
 
 </body>
 </html>

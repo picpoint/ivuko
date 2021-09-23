@@ -189,16 +189,19 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin-left: 25px;
+  font-family: Montserrat-Regular;
 }
 
 .productsingle__describe h3 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 70px;
 }
 
 .productsingle__describe span {
-  font-size: 1.3rem;
-  margin-top: 7px;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 
 body {
