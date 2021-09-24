@@ -14,7 +14,7 @@
             <span>|</span>
             <a href="{{ route('about') }}">О компании</a>
             <span>|</span>
-            <a href="#">Где купить</a>
+            <a href="{{ route('shops') }}">Где купить</a>
         </div>
         <div class="homepage__navbaraccount">
             <a href="#">Вход</a>
