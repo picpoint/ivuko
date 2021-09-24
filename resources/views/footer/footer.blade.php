@@ -11,7 +11,7 @@
     <div class="homepage__navbarlinks">
         <a href="{{ route('catalog') }}">Каталог</a>
         <span>|</span>
-        <a href="#">Прайс лист</a>
+        <a href="{{ route('price') }}">Прайс лист</a>
         <span>|</span>
         <a href="#">Контакты</a>
         <span>|</span>

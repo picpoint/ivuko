@@ -24,6 +24,8 @@ Route::match(['get', 'post'], '/catalog', 'SelectFilterController@selectFilter')
 
 Route::get('/catalog/productsingle/{id}', 'ProductSingle@single')->name('productsingle');
 
+Route::get('/price', 'PriceController@price')->name('price');
+
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/', 'MainController@index')->name('admin.index');
     Route::resource('/products', 'ProductController');

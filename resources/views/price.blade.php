@@ -14,6 +14,39 @@
 </head>
 <body>
 
+    <section class="price">
+        <div class="price__wrapper">
+            @include('navbar.navbar')
+
+            <div class="price__content">
+                <div class="price__productprice">
+                    <h3>Наши цены</h3>
+                    <div class="price__roznica">
+                        <div class="price__roznicapict">
+                            <img src="#" alt="price">
+                        </div>
+                        <div class="price__roznicainfo">
+                            <span>Цена за 1гр - 5000р</span>
+                        </div>
+                    </div>
+
+                    <div class="price__opt">
+                        <div class="price__optpict">
+                            <img src="#" alt="price">
+                        </div>
+                        <div class="price__optinfo">
+                            <span>Предусмотрена давальческая схема</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price__footer">
+                @include('footer.footer')
+            </div>
+
+        </div>
+    </section>
 
 </body>
 </html>

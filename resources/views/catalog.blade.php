@@ -105,11 +105,11 @@
             </div>
 
             <div class="catalog__footer">
-                {{--@if($pagination == 'yes')--}}
-                    {{--{{ $products->links() }}--}}
-                {{--@else--}}
+                @if($pagination == 'yes')
+                    {{ $products->links() }}
+                @else
 
-                {{--@endif--}}
+                @endif
             </div>
 
 
