@@ -28,6 +28,8 @@ Route::get('/price', 'PriceController@price')->name('price');
 
 Route::get('/contacts', 'ContactsController@contacts')->name('contacts');
 
+Route::get('/about', 'AboutController@about')->name('about');
+
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/', 'MainController@index')->name('admin.index');
     Route::resource('/products', 'ProductController');

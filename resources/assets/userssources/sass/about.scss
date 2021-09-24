@@ -1,4 +1,4 @@
-.contacts {
+.about {
   //border: $border;
   display: flex;
   flex-direction: column;
@@ -41,12 +41,12 @@
     flex-direction: column;
     width: 90%;
     margin-top: 50px;
-      span {
-        text-align: center;
-        font-size: 1.3rem;
-        font-family: Montserrat-Regular;
-        margin-top: 25px;
-      }
+    span {
+      text-align: justify;
+      font-size: 1.3rem;
+      font-family: Montserrat-Regular;
+      margin-top: 25px;
+    }
   }
 
 

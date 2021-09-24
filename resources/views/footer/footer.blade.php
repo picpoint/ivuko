@@ -13,9 +13,9 @@
         <span>|</span>
         <a href="{{ route('price') }}">Прайс лист</a>
         <span>|</span>
-        <a href="#">Контакты</a>
+        <a href="{{ route('contacts') }}">Контакты</a>
         <span>|</span>
-        <a href="#">О компании</a>
+        <a href="{{ route('about') }}">О компании</a>
         <span>|</span>
         <a href="#">Где купить</a>
     </div>
