@@ -12,7 +12,6 @@
     height: 100%;
   }
   &__content {
-    border: 2px solid $colorlightgray;
     display: flex;
     align-self: center;
     height: 80%;
@@ -20,7 +19,7 @@
     margin: 70px 0 70px 0;
   }
   &__productprice {
-    border: $border;
+    //border: 2px solid $colorlightgray;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -28,7 +27,7 @@
     width: 100%;
     height: 100%;
       h3 {
-        border: $border;
+        //border: $border;
         font-size: 2.3rem;
         height: 50px;
         text-align: center;
@@ -37,52 +36,66 @@
   }
 
   &__roznica {
-    border: $border;
+    border: 2px solid $colorlightgray;
     display: flex;
-    //height: 20px;
     width: 90%;
     margin-top: 50px;
   }
   &__roznicapict {
-    border: $border;
+    //border: $border;
     display: flex;
     width: 400px;
     height: 400px;
   }
   &__roznicainfo {
-    border: $border;
+    //border: $border;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
       span {
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-family: Montserrat-Regular;
+        text-align: center;
+        margin-bottom: 10px;
+          &:nth-child(1) {
+            font-weight: bold;
+          }
+          &:nth-child(2) {
+            margin-bottom: 60px;
+          }
+          &:nth-child(3) {
+            font-weight: bold;
+          }
       }
   }
 
   &__opt {
-    border: $border;
+    border: 2px solid $colorlightgray;
     display: flex;
-    //height: 20px;
     width: 90%;
     margin: 50px 0 50px 0;
   }
   &__optpict {
-    border: $border;
+    //border: $border;
     display: flex;
     width: 400px;
     height: 400px;
   }
   &__optinfo {
-    border: $border;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     span {
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-family: Montserrat-Regular;
+        &:nth-child(1) {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
     }
   }
 

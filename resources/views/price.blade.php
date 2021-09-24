@@ -23,19 +23,25 @@
                     <h3>Наши цены</h3>
                     <div class="price__roznica">
                         <div class="price__roznicapict">
-                            <img src="#" alt="price">
+                            <img src="\public\assets\userssources\img\product.jpg" alt="price">
                         </div>
                         <div class="price__roznicainfo">
-                            <span>Цена за 1гр - 5000р</span>
+                            <span>Изделия из золота</span>
+                            <span>от 2300 рублей за грамм</span>
+
+                            <span>Изделия из серебра</span>
+                            <span>от 125 рублей за грамм</span>
                         </div>
                     </div>
 
                     <div class="price__opt">
                         <div class="price__optpict">
-                            <img src="#" alt="price">
+                            <img src="\public\assets\userssources\img\davalc.jpg" alt="price">
                         </div>
                         <div class="price__optinfo">
                             <span>Предусмотрена давальческая схема</span>
+                            <span>от 160 рублей за грамм</span>
+                            <span>оплата по факту изготовления</span>
                         </div>
                     </div>
                 </div>
