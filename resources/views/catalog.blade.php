@@ -11,6 +11,8 @@
     <meta name="keywords" content="Кольца, серьги, пирсинг, золото, серебро, свадьба, день рождения, шеф, бриллианты, эксклюзив">
     <meta name="description" content="Официальный сайт Ивановской ювелирной компании. На нашем сайте вы найдёте ювелирные изделия. Выбирайте подарки себе и вашим близким в наших магазинах. Самовывоз из салонов в Екатеринбурге и Краснодаре.">
     <link rel="stylesheet" href="public/assets/userssources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -21,6 +23,16 @@
 
             <div class="catalog__describe">
                 <span>Полный каталог украшений</span>
+            </div>
+
+            <div class="catalog__search">
+                <form method="post" class="catalog__searchform">
+                    @csrf
+                    <input type="search" id="search" name="search" placeholder="Поиск товара(введите артикул товара)">
+                    <button type="submit" class="btn btn-lg btn-default">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
             </div>
 
             <div class="catalog__catalogblock">
