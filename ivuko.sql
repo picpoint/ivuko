@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 20 2021 г., 16:01
+-- Время создания: Сен 27 2021 г., 16:48
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.4.5
 
@@ -111,7 +111,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (15, '2021_08_25_060421_create_categories_table', 1),
 (16, '2021_08_26_052020_create_materials_table', 1),
 (17, '2021_08_26_163515_create_stones_table', 1),
-(18, '2021_08_27_053019_create_products_table', 1);
+(18, '2021_08_27_053019_create_products_table', 1),
+(19, '2021_09_27_131415_alter_table_products_add_index_vendor_code', 2);
 
 -- --------------------------------------------------------
 
@@ -125,8 +126,8 @@ CREATE TABLE `products` (
   `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `category_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `vendor_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `material` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `stone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `material_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `stone_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `weight` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `size` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `price` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -139,7 +140,7 @@ CREATE TABLE `products` (
 -- Дамп данных таблицы `products`
 --
 
-INSERT INTO `products` (`id`, `title`, `slug`, `category_id`, `vendor_code`, `material`, `stone`, `weight`, `size`, `price`, `picture`, `created_at`, `updated_at`) VALUES
+INSERT INTO `products` (`id`, `title`, `slug`, `category_id`, `vendor_code`, `material_id`, `stone_id`, `weight`, `size`, `price`, `picture`, `created_at`, `updated_at`) VALUES
 (43, 'Кольцо из серебра', 'kolco-iz-serebra', '1', '90-01-7513-06', '2', '14', '1.25', '18.0', '700', 'images/zhenskie-kolca/90_01_7513_06.jpg', '2021-09-15 10:08:17', '2021-09-15 10:08:17'),
 (44, 'Кольцо из золота SOKOLOV', 'kolco-iz-zolota-sokolov', '1', '716717', '1', '15', '1.54', '17.0', '8840', 'images/zhenskie-kolca/716717.jpg', '2021-09-15 10:13:26', '2021-09-15 10:13:26'),
 (45, 'Кольцо из серебра', 'kolco-iz-serebra-1', '1', '90-01-7241-00', '2', '4', '0.9', '16.5', '567', 'images/zhenskie-kolca/90_01_7241_00.jpg', '2021-09-15 10:16:10', '2021-09-15 10:16:10'),
@@ -271,7 +272,8 @@ ALTER TABLE `migrations`
 -- Индексы таблицы `products`
 --
 ALTER TABLE `products`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `products_vendor_code_index` (`vendor_code`);
 
 --
 -- Индексы таблицы `stones`
@@ -312,7 +314,7 @@ ALTER TABLE `materials`
 -- AUTO_INCREMENT для таблицы `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT для таблицы `products`

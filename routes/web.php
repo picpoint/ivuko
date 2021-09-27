@@ -32,6 +32,8 @@ Route::get('/about', 'AboutController@about')->name('about');
 
 Route::get('/shops', 'ShopsController@shops')->name('shops');
 
+Route::get('/search', 'SearchController@search')->name('search');
+
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/', 'MainController@index')->name('admin.index');
     Route::resource('/products', 'ProductController');

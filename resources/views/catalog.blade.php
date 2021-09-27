@@ -26,7 +26,7 @@
             </div>
 
             <div class="catalog__search">
-                <form method="post" class="catalog__searchform">
+                <form action="{{ route('search') }}" method="get" class="catalog__searchform">
                     @csrf
                     <input type="search" id="search" name="search" placeholder="Поиск товара(введите артикул товара)">
                     <button type="submit" class="btn btn-lg btn-default">
