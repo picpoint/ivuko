@@ -32,8 +32,37 @@ class UserController extends Controller
 
         Auth::login($user);
 
-        return redirect('/');
+        return redirect()->route('homepage');
 
+    }
+
+
+    public function loginForm() {
+        return view('user.login');
+    }
+
+
+    public function login(Request $request) {
+
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
+
+
+        if (Auth::attempt([
+            'email' => $request->email,
+            'password' => $request->password,
+        ])) {
+            session()->flash('success', 'Вы авторизованны');
+        }
+
+    }
+
+
+    public function logout() {
+        Auth::logout();
+        return redirect()->route('homepage');
     }
 
 }
