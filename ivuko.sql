@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 27 2021 г., 16:48
+-- Время создания: Сен 28 2021 г., 16:52
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.4.5
 
@@ -112,7 +112,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (16, '2021_08_26_052020_create_materials_table', 1),
 (17, '2021_08_26_163515_create_stones_table', 1),
 (18, '2021_08_27_053019_create_products_table', 1),
-(19, '2021_09_27_131415_alter_table_products_add_index_vendor_code', 2);
+(19, '2021_09_27_131415_alter_table_products_add_index_vendor_code', 2),
+(20, '2021_09_28_052716_alter_table_users_add_isadmin', 3);
 
 -- --------------------------------------------------------
 
@@ -237,8 +238,19 @@ CREATE TABLE `users` (
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `is_admin` tinyint(4) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `is_admin`) VALUES
+(7, 'rmtar', 'riminbox@inbox.ru', NULL, '$2y$10$PrnFQQ.SEVXJz1C/fKKy3.p2CcHynNGSg4JOFKXFgCETv5coElhiy', NULL, '2021-09-28 10:15:02', '2021-09-28 10:15:02', 1),
+(8, 'User1', 'user1@mail.com', NULL, '$2y$10$vhVmprjfUkniIxhy1evkvOyDtQfNolZOE/Kmb4Xsoms6gya37koFq', NULL, '2021-09-28 10:15:19', '2021-09-28 10:15:19', 0),
+(9, 'User2', 'user2@mail.com', NULL, '$2y$10$pIG6/LilXw2XSRyD5l5EPOwDBJmZvo9qGSGg//49u1mF.JZXVKZ5a', NULL, '2021-09-28 10:15:34', '2021-09-28 10:15:34', 0),
+(10, 'Igor', 'igor@mail.ru', NULL, '$2y$10$CEy/KD2EtmQy1v4YDHLaTObBa.4u21h4cx4QXL/miOw7iuJn.BA3i', NULL, '2021-09-28 10:15:49', '2021-09-28 10:15:49', 0);
 
 --
 -- Индексы сохранённых таблиц
@@ -314,7 +326,7 @@ ALTER TABLE `materials`
 -- AUTO_INCREMENT для таблицы `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT для таблицы `products`
@@ -332,7 +344,7 @@ ALTER TABLE `stones`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
