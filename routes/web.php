@@ -32,7 +32,10 @@ Route::get('/about', 'AboutController@about')->name('about');
 
 Route::get('/shops', 'ShopsController@shops')->name('shops');
 
-Route::get('/search', 'SearchController@search')->name('search');
+Route::match(['get', 'post'], '/search', 'SearchController@search')->name('search');
+
+Route::get('/register', 'UserController@create')->name('register.create');
+Route::post('/register', 'UserController@store')->name('register.store');
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/', 'MainController@index')->name('admin.index');

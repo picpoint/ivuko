@@ -19,7 +19,7 @@
         <div class="homepage__navbaraccount">
             <a href="#">Вход</a>
             <a href="#"> / </a>
-            <a href="#">Регистрация</a>
+            <a href="{{ route('register.create') }}">Регистрация</a>
         </div>
     </div>
 </div>

@@ -97,19 +97,25 @@
 
                     <div class="catalog__catalogcontent">
 
-                        @foreach($products as $product)
-                            <div class="homepage__cardproduct">
-                                <div class="homepage__cardimg">
-                                    <a href="/catalog/productsingle/{{ $product->id }}">
-                                        <img src="public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">
-                                    </a>
+                        @if($products->count())
+
+                            @foreach($products as $product)
+                                <div class="homepage__cardproduct">
+                                    <div class="homepage__cardimg">
+                                        <a href="/catalog/productsingle/{{ $product->id }}">
+                                            <img src="public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">
+                                        </a>
+                                    </div>
+                                    <div class="homepage__cardinfo">
+                                        <span>{{ $product->title }}</span>
+                                        <span>{{ $product->price }} руб.</span>
+                                    </div>
                                 </div>
-                                <div class="homepage__cardinfo">
-                                    <span>{{ $product->title }}</span>
-                                    <span>{{ $product->price }} руб.</span>
-                                </div>
-                            </div>
-                        @endforeach
+                            @endforeach
+
+                        @else
+                            <span style="font-size: 1.5rem; font-style: italic; margin-top: 30px;">По Вашему запросу ничего не найдено</span>
+                        @endif
 
                     </div>
 
