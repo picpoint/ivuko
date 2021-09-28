@@ -14,6 +14,12 @@
 </head>
 <body>
 
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <section class="homepage">
         <div class="homepage__wrapper">
             <div class="homepage__slider">
