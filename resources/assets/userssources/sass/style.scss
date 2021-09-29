@@ -164,6 +164,7 @@ body {
       height: 100%;
       width: 20%;
       a {
+        //border: $border;
         color: white;
         text-decoration: none;
         font-family: Montserrat-Regular;
@@ -175,6 +176,15 @@ body {
             border-bottom: 2px solid $colorredgold;
             transition: $transition;
           }
+      }
+      span {
+        //border: $border;
+        font-family: Montserrat-Regular;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-right: 10px;
+        color: $colorredgold;
+        text-align: center;
       }
     }
 

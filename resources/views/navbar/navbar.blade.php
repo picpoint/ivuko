@@ -19,7 +19,7 @@
         <div class="homepage__navbaraccount">
 
             @if(\Illuminate\Support\Facades\Auth::check())
-                {{ \Illuminate\Support\Facades\Auth::user()->name }}
+                <span>{{ \Illuminate\Support\Facades\Auth::user()->name }}</span>
                 <a href="{{ route('logout') }}">Выход</a>
             @else
                 <a href="{{ route('login') }}">Вход</a>

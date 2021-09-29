@@ -26,15 +26,6 @@
     <div class="homepage__wrapper">
         <div class="homepage__slider">
             @include('navbar.navbar')
-
-
-            {{--@if(\Illuminate\Support\Facades\Auth::check())--}}
-                {{--{{ \Illuminate\Support\Facades\Auth::user()->name }}--}}
-            {{--@else--}}
-                {{--Гость--}}
-            {{--@endif--}}
-
-
         </div>
 
         <div class="homepage__selection">
