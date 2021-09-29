@@ -28,6 +28,7 @@ class UserController extends Controller
             'password' => bcrypt($request->password),
         ]);
 
+
         session()->flash('success', 'Вы зарегистрированны');
 
         Auth::login($user);
@@ -55,7 +56,16 @@ class UserController extends Controller
             'password' => $request->password,
         ])) {
             session()->flash('success', 'Вы авторизованны');
+
+            if (Auth::user()->is_admin) {
+                return redirect()->route('admin.index');
+            } else {
+                return redirect()->route('homepage');
+            }
+
         }
+
+        return redirect()->back()->with('error', 'Логин или пароль не верны');
 
     }
 

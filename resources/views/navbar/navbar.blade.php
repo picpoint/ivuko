@@ -17,7 +17,7 @@
             <a href="{{ route('shops') }}">Где купить</a>
         </div>
         <div class="homepage__navbaraccount">
-            <a href="#">Вход</a>
+            <a href="{{ route('login') }}">Вход</a>
             <a href="#"> / </a>
             <a href="{{ route('register.create') }}">Регистрация</a>
         </div>

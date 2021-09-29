@@ -24,6 +24,7 @@
         <div class="homepage__wrapper">
             <div class="homepage__slider">
                 @include('navbar.navbar')
+
             </div>
 
             <div class="homepage__selection">
