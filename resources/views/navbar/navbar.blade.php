@@ -17,9 +17,18 @@
             <a href="{{ route('shops') }}">Где купить</a>
         </div>
         <div class="homepage__navbaraccount">
-            <a href="{{ route('login') }}">Вход</a>
-            <a href="#"> / </a>
-            <a href="{{ route('register.create') }}">Регистрация</a>
+
+            @if(\Illuminate\Support\Facades\Auth::check())
+                {{ \Illuminate\Support\Facades\Auth::user()->name }}
+                <a href="{{ route('logout') }}">Выход</a>
+            @else
+                <a href="{{ route('login') }}">Вход</a>
+                <a href="#"> / </a>
+                <a href="{{ route('register.create') }}">Регистрация</a>
+            @endif
+
+
+
         </div>
     </div>
 </div>
