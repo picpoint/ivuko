@@ -820,10 +820,11 @@ body {
 
 .homepage__newproducttitle {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .homepage__newproducttitle span {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Montserrat-Regular;
   font-weight: bold;
 }
@@ -839,7 +840,7 @@ body {
   border: 1px solid rgba(34, 60, 80, 0.2);
   display: flex;
   flex-direction: column;
-  width: 260px;
+  width: 250px;
   height: 350px;
   margin: 15px 12px;
 }
@@ -856,25 +857,24 @@ body {
 }
 
 .homepage__cardimg a img {
-  width: 260px;
-  height: 260px;
+  width: 230px;
+  height: 230px;
+  padding-top: 5px;
 }
 
 .homepage__cardinfo {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: 25%;
-  padding: 7px;
-}
-
-.homepage__cardinfo img {
-  width: 30%;
 }
 
 .homepage__cardinfo span {
   font-family: Montserrat-Regular;
+  word-wrap: break-word;
+  width: 90%;
 }
 
 .homepage__cardinfo span:nth-child(2) {
