@@ -33,7 +33,7 @@
                 <div class="homepage__menrings">
                     <div class="homepage__text">
                         <span>Мужские кольца</span>
-                        <a href="#">СМОТРЕТЬ ВСЕ КОЛЬЦА</a>
+                        <a href="/catalog/3">СМОТРЕТЬ ВСЕ КОЛЬЦА</a>
                     </div>
                     <div class="homepage__pict">
                         <img src="public/assets/userssources/img/menring.png" alt="ring">
@@ -42,7 +42,7 @@
                 <div class="homepage__pendant">
                     <div class="homepage__text">
                         <span>Подвески</span>
-                        <a href="#">СМОТРЕТЬ ВСЕ ПОДВЕСКИ</a>
+                        <a href="/catalog/5">СМОТРЕТЬ ВСЕ ПОДВЕСКИ</a>
                     </div>
                     <div class="homepage__pict">
                         <img src="public/assets/userssources/img/pedant.png" alt="pendant">
@@ -51,7 +51,7 @@
                 <div class="homepage__earrings">
                     <div class="homepage__text">
                         <span>Серьги</span>
-                        <a href="#">СМОТРЕТЬ ВСЕ СЕРЬГИ</a>
+                        <a href="/catalog/7">СМОТРЕТЬ ВСЕ СЕРЬГИ</a>
                     </div>
                     <div class="homepage__pict">
                         <img src="public/assets/userssources/img/earring.png" alt="earring">
@@ -65,127 +65,23 @@
                 <div class="homepage__newproducttitle">
                     <span>Новые модели</span>
                 </div>
+
                 <div class="homepage__cardsblock">
-                    <div class="homepage__cardproduct">
-                        <div class="homepage__cardimg">
-                            <a href="#">
-                                <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
-                            </a>
+
+                    @foreach($products as $product)
+                        <div class="homepage__cardproduct">
+                            <div class="homepage__cardimg">
+                                <a href="/catalog/productsingle/{{ $product->id }}">
+                                    <img src="\public\storage\{{ $product->picture }}" alt="jewelry_product">
+                                </a>
+                            </div>
+                            <div class="homepage__cardinfo">
+                                <span>{{ $product->title }}</span>
+                                <span>{{ $product->price }}</span>
+                            </div>
                         </div>
-                        <div class="homepage__cardinfo">
-                            {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
-                            <span>Tic small Alessi</span>
-                            <span>$85.0</span>
-                        </div>
-                    </div>
-                    <div class="homepage__cardproduct">
-                        <div class="homepage__cardimg">
-                            <a href="#">
-                                <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                            </a>
-                        </div>
-                        <div class="homepage__cardinfo">
-                            {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
-                            <span>Tic small Alessi</span>
-                            <span>$85.0</span>
-                        </div>
-                    </div>
-                    <div class="homepage__cardproduct">
-                        <div class="homepage__cardimg">
-                            <a href="#">
-                                <img src="public\assets\userssources\img\pages\necklace.jpg" alt="jewelry_product">
-                            </a>
-                        </div>
-                        <div class="homepage__cardinfo">
-                            {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
-                            <span>Tic small Alessi</span>
-                            <span>$85.0</span>
-                        </div>
-                    </div>
-                    <div class="homepage__cardproduct">
-                        <div class="homepage__cardimg">
-                            <a href="#">
-                                <img src="public\assets\userssources\img\pages\pendant.jpg" alt="jewelry_product">
-                            </a>
-                        </div>
-                        <div class="homepage__cardinfo">
-                            {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
-                            <span>Tic small Alessi</span>
-                            <span>$85.0</span>
-                        </div>
-                    </div>
-                    <div class="homepage__cardproduct">
-                        <div class="homepage__cardimg">
-                            <a href="#">
-                                <img src="public\assets\userssources\img\pages\ring2.jpg" alt="jewelry_product">
-                            </a>
-                        </div>
-                        <div class="homepage__cardinfo">
-                            {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
-                            <span>Tic small Alessi</span>
-                            <span>$85.0</span>
-                        </div>
-                    </div>
-                    <div class="homepage__cardproduct">
-                        <div class="homepage__cardimg">
-                            <a href="#">
-                                <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
-                            </a>
-                        </div>
-                        <div class="homepage__cardinfo">
-                            {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
-                            <span>Tic small Alessi</span>
-                            <span>$85.0</span>
-                        </div>
-                    </div>
-                    <div class="homepage__cardproduct">
-                        <div class="homepage__cardimg">
-                            <a href="#">
-                                <img src="public\assets\userssources\img\pages\pendant.jpg" alt="jewelry_product">
-                            </a>
-                        </div>
-                        <div class="homepage__cardinfo">
-                            {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
-                            <span>Tic small Alessi</span>
-                            <span>$85.0</span>
-                        </div>
-                    </div>
-                    <div class="homepage__cardproduct">
-                        <div class="homepage__cardimg">
-                            <a href="#">
-                                <img src="public\assets\userssources\img\pages\necklace.jpg" alt="jewelry_product">
-                            </a>
-                        </div>
-                        <div class="homepage__cardinfo">
-                            {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
-                            <span>Tic small Alessi</span>
-                            <span>$85.0</span>
-                        </div>
-                    </div>
-                    <div class="homepage__cardproduct">
-                        <div class="homepage__cardimg">
-                            <a href="#">
-                                <img src="public\assets\userssources\img\pages\earrings.jpg" alt="jewelry_product">
-                            </a>
-                        </div>
-                        <div class="homepage__cardinfo">
-                            {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
-                            <span>Tic small Alessi</span>
-                            <span>$85.0</span>
-                        </div>
-                    </div>
-                    <div class="homepage__cardproduct">
-                        <div class="homepage__cardimg">
-                            <a href="#">
-                                <img src="public\assets\userssources\img\pages\ring.jpg" alt="jewelry_product">
-                            </a>
-                        </div>
-                        <div class="homepage__cardinfo">
-                            {{--<img src="public\assets\userssources\img\pages\stars.jpg" alt="stars">--}}
-                            <span>Tic small Alessi</span>
-                            <span>$85.0</span>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>

@@ -18,6 +18,8 @@ Route::get('/', 'HomeController@index')->name('homepage');
 
 Route::match(['get', 'post'], '/catalog', 'SelectFilterController@selectFilter')->name('catalog');
 
+Route::get('/catalog/{id}', 'CatalogController@showProductsByCategory')->name('catalogcategory');
+
 Route::get('/catalog/productsingle/{id}', 'ProductSingle@single')->name('productsingle');
 
 Route::get('/price', 'PriceController@price')->name('price');

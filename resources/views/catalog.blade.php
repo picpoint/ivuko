@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="Кольца, серьги, пирсинг, золото, серебро, свадьба, день рождения, шеф, бриллианты, эксклюзив">
     <meta name="description" content="Официальный сайт Ивановской ювелирной компании. На нашем сайте вы найдёте ювелирные изделия. Выбирайте подарки себе и вашим близким в наших магазинах. Самовывоз из салонов в Екатеринбурге и Краснодаре.">
-    <link rel="stylesheet" href="public/assets/userssources/css/style.css">
+    <link rel="stylesheet" href="/public/assets/userssources/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -103,7 +103,7 @@
                                 <div class="homepage__cardproduct">
                                     <div class="homepage__cardimg">
                                         <a href="/catalog/productsingle/{{ $product->id }}">
-                                            <img src="public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">
+                                            <img src="\public\storage\{{ $product->picture }}" alt="{{ $product->slug }}">
                                         </a>
                                     </div>
                                     <div class="homepage__cardinfo">
