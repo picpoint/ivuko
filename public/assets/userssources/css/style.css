@@ -632,17 +632,12 @@ body {
   display: flex;
   justify-content: center;
   height: 80px;
-  box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
+  background-color: black;
 }
 
 .homepage__navbarmenu {
   display: flex;
   width: 65%;
-}
-
-.homepage__navbarmenu__xxl-block {
-  background-color: green;
-  width: 500px;
 }
 
 .homepage__navbarlogo {
@@ -672,24 +667,23 @@ body {
 }
 
 .homepage__navbarlinks a {
-  color: white;
   text-decoration: none;
   font-family: Montserrat-Regular;
   font-weight: bold;
   transition: ease-in-out 0.1s;
-  color: #C36F54;
+  color: white;
 }
 
 .homepage__navbarlinks a:hover {
-  border-bottom: 2px solid #C36F54;
+  border-bottom: 2px solid white;
   transition: ease-in-out 0.1s;
+  color: white;
 }
 
 .homepage__navbarlinks span {
-  color: white;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #C36F54;
+  color: white;
 }
 
 .homepage__navbaraccount {
@@ -707,20 +701,22 @@ body {
   font-weight: bold;
   padding: 0 2px;
   transition: ease-in-out 0.1s;
-  color: #C36F54;
+  color: white;
 }
 
 .homepage__navbaraccount a:hover {
-  border-bottom: 2px solid #C36F54;
+  border-bottom: 2px solid white;
   transition: ease-in-out 0.1s;
+  color: white;
 }
 
 .homepage__navbaraccount span {
+  border: 1px solid red;
   font-family: Montserrat-Regular;
   font-size: 1.3rem;
   font-weight: bold;
   margin-right: 10px;
-  color: #C36F54;
+  color: white;
   text-align: center;
 }
 

@@ -92,25 +92,19 @@ body {
       background-image: url("/public/assets/userssources/img/slider/03.jpg");
       background-size: 100%;
       background-repeat: no-repeat;
-      //-webkit-box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
-      //-moz-box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
-      //box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
     }
     &__navbar {
       //border: $border;
       display: flex;
       justify-content: center;
       height: 80px;
-      box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
+      background-color: black;
+      //box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
     }
     &__navbarmenu {
       //border: $border;
       display: flex;
       width: 65%;
-        &__xxl-block {
-          background-color: green;
-          width: 500px;
-        }
     }
     &__navbarlogo {
       //border: $border;
@@ -138,22 +132,21 @@ body {
       height: 100%;
       width: 60%;
         a {
-          color: white;
           text-decoration: none;
           font-family: Montserrat-Regular;
           font-weight: bold;
           transition: $transition;
-          color: $colorredgold;
+          color: white;
             &:hover {
-              border-bottom: 2px solid $colorredgold;
+              border-bottom: 2px solid white;
               transition: $transition;
+              color: white;
             }
         }
         span {
-          color: white;
           font-size: 1.5rem;
           font-weight: bold;
-          color: $colorredgold;
+          color: white;
         }
     }
     &__navbaraccount {
@@ -171,19 +164,20 @@ body {
         font-weight: bold;
         padding: 0 2px;
         transition: $transition;
-        color: $colorredgold;
+        color: white;
           &:hover {
-            border-bottom: 2px solid $colorredgold;
+            border-bottom: 2px solid white;
             transition: $transition;
+            color: white;
           }
       }
       span {
-        //border: $border;
+        border: $border;
         font-family: Montserrat-Regular;
         font-size: 1.3rem;
         font-weight: bold;
         margin-right: 10px;
-        color: $colorredgold;
+        color: white;
         text-align: center;
       }
     }
