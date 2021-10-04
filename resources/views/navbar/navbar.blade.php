@@ -2,7 +2,7 @@
     <div class="homepage__navbarmenu">
         <div class="homepage__navbarlogo">
             <a href="{{ route('homepage') }}">
-                <img src="/public/assets/userssources/img/log5w.png" alt="logo">
+                <img src="/public/assets/userssources/img/logo3.png" alt="logo">
             </a>
         </div>
         <div class="homepage__navbarlinks">

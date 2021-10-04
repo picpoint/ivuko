@@ -676,8 +676,9 @@ body {
 }
 
 .homepage__navbarlinks a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #393536;
   transition: ease-in-out 0.1s;
+  color: #393536;
 }
 
 .homepage__navbarlinks span {
@@ -706,8 +707,9 @@ body {
 }
 
 .homepage__navbaraccount a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #393536;
   transition: ease-in-out 0.1s;
+  color: #393536;
 }
 
 .homepage__navbaraccount span {

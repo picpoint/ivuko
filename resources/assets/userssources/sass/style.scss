@@ -138,8 +138,9 @@ body {
           transition: $transition;
           color: white;
             &:hover {
-              border-bottom: 2px solid white;
+              border-bottom: 2px solid $colordarkgray;
               transition: $transition;
+              color: $colordarkgray;
             }
         }
         span {
@@ -166,8 +167,9 @@ body {
         transition: $transition;
         color: white;
           &:hover {
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $colordarkgray;
             transition: $transition;
+            color: $colordarkgray;
           }
       }
       span {
