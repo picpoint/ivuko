@@ -77,6 +77,9 @@ body {
   display: flex;
   flex-direction: column;
   //height: 100vh;
+  //  @media (max-width: 1000px) {
+  //    background-color: blue;
+  //  }
     &__wrapper {
       //border: $border;
       display: flex;
@@ -94,16 +97,32 @@ body {
       background-repeat: no-repeat;
     }
     &__navbar {
-      //border: $border;
+      border: $border;
       display: flex;
       justify-content: center;
       height: 80px;
       box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
+        @media (max-width: 960px) {
+          height: 200px;
+        }
     }
     &__navbarmenu {
-      //border: $border;
+      border: $border;
       display: flex;
-      width: 65%;
+      width: 70%;
+      transition: $transition;
+        @media (max-width: 1400px) {
+          width: 80%;
+          transition: $transition;
+        }
+        @media (max-width: 1140px) {
+          width: 85%;
+          transition: $transition;
+        }
+        @media (max-width: 960px) {
+          flex-direction: column;
+          transition: $transition;
+        }
     }
     &__navbarlogo {
       //border: $border;
@@ -119,6 +138,11 @@ body {
           height: 100%;
           img {
             height: 70%;
+            transition: $transition;
+            @media (max-width: 1400px) {
+              height: 65%;
+              transition: $transition;
+            }
           }
         }
 
@@ -137,6 +161,9 @@ body {
           font-weight: bold;
           transition: $transition;
           color: white;
+            @media (max-width: 1400px) {
+              font-size: 0.8rem;
+            }
             &:hover {
               border-bottom: 2px solid $colordarkgray;
               transition: $transition;
@@ -166,6 +193,9 @@ body {
         padding: 0 2px;
         transition: $transition;
         color: white;
+          @media (max-width: 1400px) {
+            font-size: 0.9rem;
+          }
           &:hover {
             border-bottom: 2px solid $colordarkgray;
             transition: $transition;

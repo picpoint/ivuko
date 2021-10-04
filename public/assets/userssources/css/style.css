@@ -629,15 +629,45 @@ body {
 }
 
 .homepage__navbar {
+  border: 1px solid red;
   display: flex;
   justify-content: center;
   height: 80px;
   box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
 }
 
+@media (max-width: 960px) {
+  .homepage__navbar {
+    height: 200px;
+  }
+}
+
 .homepage__navbarmenu {
+  border: 1px solid red;
   display: flex;
-  width: 65%;
+  width: 70%;
+  transition: ease-in-out 0.1s;
+}
+
+@media (max-width: 1400px) {
+  .homepage__navbarmenu {
+    width: 80%;
+    transition: ease-in-out 0.1s;
+  }
+}
+
+@media (max-width: 1140px) {
+  .homepage__navbarmenu {
+    width: 85%;
+    transition: ease-in-out 0.1s;
+  }
+}
+
+@media (max-width: 960px) {
+  .homepage__navbarmenu {
+    flex-direction: column;
+    transition: ease-in-out 0.1s;
+  }
 }
 
 .homepage__navbarlogo {
@@ -656,6 +686,14 @@ body {
 
 .homepage__navbarlogo a img {
   height: 70%;
+  transition: ease-in-out 0.1s;
+}
+
+@media (max-width: 1400px) {
+  .homepage__navbarlogo a img {
+    height: 65%;
+    transition: ease-in-out 0.1s;
+  }
 }
 
 .homepage__navbarlinks {
@@ -673,6 +711,12 @@ body {
   font-weight: bold;
   transition: ease-in-out 0.1s;
   color: white;
+}
+
+@media (max-width: 1400px) {
+  .homepage__navbarlinks a {
+    font-size: 0.8rem;
+  }
 }
 
 .homepage__navbarlinks a:hover {
@@ -704,6 +748,12 @@ body {
   padding: 0 2px;
   transition: ease-in-out 0.1s;
   color: white;
+}
+
+@media (max-width: 1400px) {
+  .homepage__navbaraccount a {
+    font-size: 0.9rem;
+  }
 }
 
 .homepage__navbaraccount a:hover {
