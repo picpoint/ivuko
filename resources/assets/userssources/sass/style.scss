@@ -60,6 +60,26 @@ body {
   display: flex;
   justify-content: space-between;
   width: 20%;
+  transition: $transition;
+    @media (max-width: 720px) {
+      height: 350px;
+      width: 500px;
+      margin: 10px 0;
+      border: 1px solid gray;
+      transition: $transition;
+    }
+    @media (max-width: 540px) {
+      height: 300px;
+      width: 400px;
+      margin: 10px 0;
+      transition: $transition;
+    }
+    @media (max-width: 480px) {
+      height: 200px;
+      width: 270px;
+      margin: 10px 0;
+      transition: $transition;
+    }
 }
 @mixin servicesimg {
   //border: $border;
@@ -67,9 +87,26 @@ body {
   justify-content: center;
   align-items: center;
   width: 30%;
+  transition: $transition;
   img {
     width: 60px;
     height: 60px;
+    transition: $transition;
+      @media(max-width: 960px) {
+        width: 50px;
+        height: 50px;
+        transition: $transition;
+      }
+      @media(max-width: 720px) {
+        width: 90px;
+        height: 90px;
+        transition: $transition;
+      }
+      @media(max-width: 540px) {
+        width: 70px;
+        height: 70px;
+        transition: $transition;
+      }
   }
 }
 @mixin servicesdesc {
@@ -79,12 +116,27 @@ body {
   justify-content: center;
   align-items: center;
   width: 70%;
+  transition: $transition;
   span {
     //border: $border;
     text-align: center;
     margin: 5px 0;
     font-family: Montserrat-Regular;
     font-size: 0.9rem;
+    transition: $transition;
+      @media(max-width: 960px) {
+        font-size: 0.8rem;
+        transition: $transition;
+      }
+      @media(max-width: 720px) {
+        font-size: 1.3rem;
+        transition: $transition;
+      }
+      @media(max-width: 540px) {
+        font-size: 1rem;
+        transition: $transition;
+      }
+
     &:nth-child(1) {
       font-weight: bold;
     }
@@ -522,12 +574,26 @@ body {
       height: 150px;
       margin-top: 150px;
       background-color: $colorlightgray;
+        @media (max-width: 720px) {
+          height: auto;
+        }
     }
     &__serviceswrapper {
       //border: $border;
       display: flex;
       justify-content: space-around;
       width: 80%;
+      transition: $transition;
+        @media(max-width: 1140px) {
+          width: 95%;
+          transition: $transition;
+        }
+        @media (max-width: 720px) {
+          flex-direction: column;
+          align-items: center;
+          transition: $transition;
+
+        }
     }
     &__shipping {
       @include servicesblock;
