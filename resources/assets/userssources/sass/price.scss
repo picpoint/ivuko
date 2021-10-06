@@ -2,8 +2,6 @@
   //border: $border;
   display: flex;
   flex-direction: column;
-  //height: 100vh;
-  //width: 100vw;
   &__wrapper {
     //border: $border;
     display: flex;
@@ -12,11 +10,25 @@
     height: 100%;
   }
   &__content {
+    //border: $border;
     display: flex;
     align-self: center;
     height: 80%;
     width: 65%;
     margin: 70px 0 70px 0;
+    transition: $transition;
+      @media (max-width: 1400px) {
+        width: 80%;
+        transition: $transition;
+      }
+      @media (max-width: 1140px) {
+        width: 90%;
+        transition: $transition;
+      }
+      @media (max-width: 960px) {
+        width: 95%;
+        transition: $transition;
+      }
   }
   &__productprice {
     //border: 2px solid $colorlightgray;
@@ -40,12 +52,38 @@
     display: flex;
     width: 90%;
     margin-top: 50px;
+    transition: $transition;
+      @media (max-width: 960px) {
+        width: 95%;
+        transition: $transition;
+      }
+      @media (max-width: 720px) {
+        flex-direction: column;
+        align-items: center;
+        transition: $transition;
+      }
   }
   &__roznicapict {
     //border: $border;
     display: flex;
     width: 400px;
     height: 400px;
+    transition: $transition;
+      @media (max-width: 960px) {
+        width: 300px;
+        height: 300px;
+        transition: $transition;
+      }
+      @media (max-width: 720px) {
+        flex-direction: column;
+        margin-bottom: 30px;
+        transition: $transition;
+      }
+      @media (max-width: 480px) {
+        width: 250px;
+        height: 250px;
+        transition: $transition;
+      }
   }
   &__roznicainfo {
     //border: $border;
@@ -54,11 +92,21 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+      @media (max-width: 720px) {
+        width: 90%;
+        transition: $transition;
+      }
       span {
+        //border: $border;
         font-size: 1.7rem;
         font-family: Montserrat-Regular;
         text-align: center;
         margin-bottom: 10px;
+        transition: $transition;
+          @media (max-width: 960px) {
+            font-size: 1.3rem;
+            transition: $transition;
+          }
           &:nth-child(1) {
             font-weight: bold;
           }
@@ -76,12 +124,36 @@
     display: flex;
     width: 90%;
     margin: 50px 0 50px 0;
+      @media (max-width: 960px) {
+        width: 95%;
+        transition: $transition;
+      }
+      @media (max-width: 720px) {
+        flex-direction: column;
+        align-items: center;
+        transition: $transition;
+      }
   }
   &__optpict {
     //border: $border;
     display: flex;
     width: 400px;
     height: 400px;
+      @media (max-width: 960px) {
+        width: 300px;
+        height: 300px;
+        transition: $transition;
+      }
+      @media (max-width: 720px) {
+        flex-direction: column;
+        margin-bottom: 30px;
+        transition: $transition;
+      }
+      @media (max-width: 480px) {
+        width: 250px;
+        height: 250px;
+        transition: $transition;
+      }
   }
   &__optinfo {
     display: flex;
@@ -89,9 +161,19 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+      @media (max-width: 720px) {
+        width: 90%;
+        transition: $transition;
+      }
     span {
+      //border: $border;
       font-size: 1.7rem;
       font-family: Montserrat-Regular;
+      text-align: center;
+        @media (max-width: 960px) {
+          font-size: 1.3rem;
+          transition: $transition;
+        }
         &:nth-child(1) {
           font-weight: bold;
           margin-bottom: 10px;

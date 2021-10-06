@@ -12,14 +12,29 @@
     height: 100%;
   }
   &__content {
+    border: $border;
     display: flex;
     align-self: center;
     height: 80%;
     width: 65%;
     margin: 70px 0 70px 0;
+    transition: $transition;
+      @media (max-width: 1400px) {
+        width: 70%;
+        transition: $transition;
+      }
+      @media (max-width: 960px) {
+        width: 90%;
+        transition: $transition;
+      }
+      @media (max-width: 540px) {
+        width: 100%;
+        transition: $transition;
+      }
   }
   &__prod {
     //border: 2px solid $colorlightgray;
+    //border: $border;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -42,6 +57,7 @@
         font-size: 1.3rem;
         font-weight: bold;
         font-family: Montserrat-Regular;
+        text-align: center;
         text-decoration: underline;
       }
   }
@@ -51,25 +67,58 @@
     display: flex;
     width: 90%;
     margin-top: 50px;
+    transition: $transition;
+      @media (max-width: 960px) {
+        flex-direction: column;
+        align-items: center;
+        transition: $transition;
+      }
   }
   &__magazblock {
-    //border: $border;
+    border: $border;
     display: flex;
     width: 500px;
     height: 500px;
+    transition: $transition;
+      @media (max-width: 960px) {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 20px;
+        transition: $transition;
+      }
+      @media (max-width: 540px) {
+        width: 300px;
+        height: 300px;
+        transition: $transition;
+      }
+      @media (max-width: 480px) {
+        width: 270px;
+        height: 270px;
+        transition: $transition;
+      }
   }
   &__magazinfo {
-    //border: $border;
+    border: $border;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     span {
+      border: $border;
       font-size: 1.7rem;
       font-family: Montserrat-Regular;
       text-align: center;
       margin-bottom: 10px;
+      transition: $transition;
+        @media (max-width: 1400px) {
+          font-size: 1.4rem;
+          transition: $transition;
+        }
+        @media (max-width: 1140px) {
+          font-size: 1.1rem;
+          transition: $transition;
+        }
       &:nth-child(1) {
         font-weight: bold;
       }

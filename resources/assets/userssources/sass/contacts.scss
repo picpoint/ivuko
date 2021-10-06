@@ -19,6 +19,15 @@
     height: 80%;
     width: 65%;
     margin: 70px 0 70px 0;
+    transition: $transition;
+      @media (max-width: 1140px) {
+        width: 80%;
+        transition: $transition;
+      }
+      @media (max-width: 960px) {
+        width: 95%;
+        transition: $transition;
+      }
   }
   &__contblock {
     //border: $border;
@@ -26,13 +35,16 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-    width: 100%;
+    width: 95%;
     h3 {
       //border: $border;
       font-size: 2.3rem;
       height: 50px;
       text-align: center;
       font-family: Montserrat-Regular;
+        @media (max-width: 960px) {
+          font-size: 2rem;
+        }
     }
   }
   &__conts {
@@ -41,11 +53,22 @@
     flex-direction: column;
     width: 90%;
     margin-top: 50px;
+    transition: $transition;
+      @media (max-width: 960px) {
+        width: 100%;
+        margin-top: 20px;
+        transition: $transition;
+      }
       span {
         text-align: center;
         font-size: 1.3rem;
         font-family: Montserrat-Regular;
         margin-top: 25px;
+        transition: $transition;
+          @media (max-width: 480px) {
+            font-size: 1rem;
+            transition: $transition;
+          }
       }
   }
 

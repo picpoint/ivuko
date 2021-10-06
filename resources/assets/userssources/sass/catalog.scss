@@ -14,9 +14,17 @@
       align-items: center;
       height: 50px;
         span {
-          //font-weight: bold;
+          //border: $border;
           font-family: Montserrat-Regular;
           font-size: 1.7rem;
+          transition: $transition;
+            @media (max-width: 540px) {
+              font-size: 1.3rem;
+              transition: $transition;
+            }
+            @media (max-width: 480px) {
+              display: none;
+            }
         }
     }
 
@@ -27,13 +35,26 @@
       align-self: center;
       height: 50px;
       width: 65%;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
+      transition: $transition;
+        @media (max-width: 960px) {
+          width: 95%;
+          transition: $transition;
+        }
+        @media (max-width: 720px) {
+          margin: 20px 0 25px 0;
+        }
     }
 
     &__searchform {
       //border: $border;
       display: flex;
       width: 75%;
+      transition: $transition;
+        @media (max-width: 1140px) {
+          width: 100%;
+          transition: $transition;
+        }
       input {
         border-top: 1px solid black;
         border-left: 1px solid black;
@@ -68,6 +89,11 @@
       //border: $border;
       display: flex;
       width: 65%;
+      transition: $transition;
+        @media (max-width: 1140px) {
+          width: 95%;
+          transition: $transition;
+        }
     }
     &__catalogfilter {
       border-top: 1px solid gray;
@@ -76,6 +102,12 @@
       display: flex;
       flex-direction: column;
       width: 25%;
+        @media (max-width: 1140px) {
+          width: 30%;
+        }
+        @media (max-width: 720px) {
+          width: 45%;
+        }
     }
     &__filterdefault {
       //border: $border;
@@ -186,6 +218,14 @@
       align-content: flex-start;
       flex-wrap: wrap;
       width: 75%;
+      transition: $transition;
+        @media (max-width: 1140px) {
+          width: 70%;
+          transition: $transition;
+        }
+        @media (max-width: 720px) {
+          width: 55%;
+        }
     }
 
     &__footer {
