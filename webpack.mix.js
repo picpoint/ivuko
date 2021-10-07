@@ -26,11 +26,10 @@ mix.sass('resources/assets/userssources/sass/style.scss', 'public/assets/usersso
 });
 
 
-
-// mix.less('resources/assets/userssources/less/smart-grid.less', 'resources/assets/userssources/sass/smart-grid.scss').options({
-//     processCssUrls: false
-// });
-
+mix.scripts('resources/assets/userssources/js/test.js', 'public/assets/userssources/js/test.js')
+    .browserSync({
+    proxy: 'http://ivuko/'
+});
 
 
 
@@ -41,9 +40,6 @@ mix.scripts([
     'resources/assets/admin/js/demo.js',
 ], 'public/assets/admin/js/admin.js');
 
-mix.scripts([
-    'resources/assets/userssources/js/test.js',
-], 'public/assets/userssources/js/test.js');
 
 
 mix.copyDirectory('resources/assets/admin/img', 'public/assets/admin/img');

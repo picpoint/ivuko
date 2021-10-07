@@ -137,6 +137,6 @@
 </section>
 
 
-{{--<script src="public/assets/userssources/js/test.js"></script>--}}
+<script src="/public/assets/userssources/js/test.js"></script>
 </body>
 </html>

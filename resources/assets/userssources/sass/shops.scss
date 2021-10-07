@@ -12,7 +12,7 @@
     height: 100%;
   }
   &__content {
-    border: $border;
+    //border: $border;
     display: flex;
     align-self: center;
     height: 80%;
@@ -75,10 +75,11 @@
       }
   }
   &__magazblock {
-    border: $border;
+    //border: $border;
     display: flex;
     width: 500px;
     height: 500px;
+    overflow: hidden;
     transition: $transition;
       @media (max-width: 960px) {
         width: 400px;
@@ -98,14 +99,14 @@
       }
   }
   &__magazinfo {
-    border: $border;
+    //border: $border;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     span {
-      border: $border;
+      //border: $border;
       font-size: 1.7rem;
       font-family: Montserrat-Regular;
       text-align: center;

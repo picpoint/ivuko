@@ -1,1 +1,1 @@
-alert('test message');
+console.log('bboo');
