@@ -12,25 +12,20 @@ const mix = require('laravel-mix');
  */
 
 
+mix.scripts(['resources/assets/userssources/js/test.js'], 'public/assets/userssources/js/test.js')
+    .browserSync({
+        proxy: 'http://ivuko/'
+    });
+
+
+
 mix.styles([
     'resources/assets/admin/plugins/fontawesome-free/css/all.min.css',
     'resources/assets/admin/css/adminlte.min.css',
 ], 'public/assets/admin/css/admin.css');
 
 
-
-
-mix.sass('resources/assets/userssources/sass/style.scss', 'public/assets/userssources/css/style.css')
-    .browserSync({
-    proxy: 'http://ivuko/'
-});
-
-
-mix.scripts('resources/assets/userssources/js/test.js', 'public/assets/userssources/js/test.js')
-    .browserSync({
-    proxy: 'http://ivuko/'
-});
-
+mix.sass('resources/assets/userssources/sass/style.scss', 'public/assets/userssources/css/style.css');
 
 
 mix.scripts([

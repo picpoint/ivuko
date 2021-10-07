@@ -1,1 +1,3 @@
-console.log('bboo');
+let slider = document.querySelector('.homepage__slider');
+
+console.log(slider.childElementCount);
