@@ -38,7 +38,6 @@ class MaterialController extends Controller
      */
     public function store(Request $request)
     {
-//        dd($request->all());
 
         Material::create($request->all());
         session()->flash('success', 'Материал создан');

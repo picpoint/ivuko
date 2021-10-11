@@ -19,7 +19,6 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::with('category')->paginate(5);
-//        $products = Product::all()->paginate(5);
         return view('admin.products.index', compact('products'));
     }
 
@@ -62,8 +61,8 @@ class ProductController extends Controller
             'title' => $request->title,
             'category_id' => $request->category_id,
             'vendor_code' => $request->vendor_code,
-            'material' => $request->material,
-            'stone' => $request->stone,
+            'material_id' => $request->material,
+            'stone_id' => $request->stone,
             'weight' => $request->weight,
             'size' => $request->size,
             'price' => $request->price,

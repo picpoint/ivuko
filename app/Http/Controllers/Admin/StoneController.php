@@ -77,7 +77,7 @@ class StoneController extends Controller
         $stone = Stone::find($id);
         $stone->slug = null;
         $stone->update($request->all());
-        session()->flash('success', 'Материал отредактирован');
+        session()->flash('success', 'Вставка отредактированна');
         return redirect()->route('stones.edit', compact('stone'));
     }
 
@@ -90,7 +90,7 @@ class StoneController extends Controller
     public function destroy($id)
     {
         Stone::destroy($id);
-        session()->flash('success', 'Материал удалён');
+        session()->flash('success', 'Вставка удалёна');
         return redirect()->route('stones.index');
     }
 }
