@@ -24,6 +24,13 @@
 <section class="homepage">
     <div class="homepage__wrapper">
         <div class="homepage__slider">
+            <div class="homepage__sliderline">
+                <img src="/public/assets/userssources/img/slider/05.jpg" alt="slide">
+                <img src="/public/assets/userssources/img/slider/02.jpg" alt="slide">
+                <img src="/public/assets/userssources/img/slider/03.jpg" alt="slide">
+                <img src="/public/assets/userssources/img/slider/04.jpg" alt="slide">
+                <img src="/public/assets/userssources/img/slider/05.jpg" alt="slide">
+            </div>
             @include('navbar.navbar')
         </div>
 
@@ -137,6 +144,6 @@
 </section>
 
 
-<script src="/public/assets/userssources/js/test.js"></script>
+<script src="/public/assets/userssources/js/slider.js"></script>
 </body>
 </html>

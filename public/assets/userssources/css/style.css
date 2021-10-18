@@ -1066,6 +1066,7 @@ body {
   line-height: 1.5;
   box-sizing: border-box;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .homepage {
@@ -1084,9 +1085,7 @@ body {
   flex-direction: column;
   height: 640px;
   width: 100%;
-  background-image: url("/public/assets/userssources/img/slider/05.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  transition: ease-in-out 0.5s;
 }
 
 @media (max-width: 960px) {
@@ -1107,10 +1106,51 @@ body {
   }
 }
 
+.homepage__sliderline {
+  display: flex;
+  position: absolute;
+  transition: ease-in-out 0.5s;
+}
+
+.homepage__sliderline img {
+  width: 100%;
+  transition: ease-in-out 0.5s;
+}
+
+@media (max-width: 1400px) {
+  .homepage__sliderline {
+    height: 500px;
+    width: 100%;
+    transition: ease-in-out 0.5s;
+  }
+}
+
+@media (max-width: 1140px) {
+  .homepage__sliderline img {
+    height: 400px;
+    transition: ease-in-out 0.5s;
+  }
+}
+
+@media (max-width: 720px) {
+  .homepage__sliderline img {
+    height: 300px;
+    transition: ease-in-out 0.5s;
+  }
+}
+
+@media (max-width: 540px) {
+  .homepage__sliderline img {
+    height: 310px;
+    transition: ease-in-out 0.5s;
+  }
+}
+
 .homepage__navbar {
   display: flex;
   justify-content: center;
   height: 80px;
+  position: relative;
   box-shadow: 0 100px 30px -6px rgba(34, 60, 80, 0.2) inset;
 }
 

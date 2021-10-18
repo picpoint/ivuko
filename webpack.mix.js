@@ -12,7 +12,7 @@ const mix = require('laravel-mix');
  */
 
 
-mix.scripts(['resources/assets/userssources/js/test.js'], 'public/assets/userssources/js/test.js')
+mix.scripts(['resources/assets/userssources/js/slider.js'], 'public/assets/userssources/js/slider.js')
     .browserSync({
         proxy: 'http://ivuko/'
     });
@@ -26,6 +26,9 @@ mix.styles([
 
 
 mix.sass('resources/assets/userssources/sass/style.scss', 'public/assets/userssources/css/style.css');
+    // .browserSync({
+    //     proxy: 'http://ivuko/'
+    // });
 
 
 mix.scripts([
